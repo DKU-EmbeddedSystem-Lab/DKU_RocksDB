@@ -54,8 +54,8 @@ bool FindIntraL0Compaction(const std::vector<FileMetaData*>& level_files,
     // Because all files are sorted in descending order by largest_seqno, so we
     // only need to check the first one.
     if (level_files[start]->fd.largest_seqno <= earliest_mem_seqno) {
-      break; //if some files' largest_seqno is smaller than erliest_mem_seqno
-        58       //break loop(= level files are older than memtable file, which is ordinary, seqno = WAL sequence number) inhoinno
+      break; //if some files' largest_seqno is smaller than earliest_mem_seqno
+      //break loop(= level files are older than memtable file, which is ordinary, seqno = WAL sequence number) inhoinno
     }
   }
   if (start >= level_files.size()) {
@@ -71,19 +71,33 @@ bool FindIntraL0Compaction(const std::vector<FileMetaData*>& level_files,
   size_t limit;
   // Pull in files until the amount of compaction work per deleted file begins
   // increasing or maximum total compaction size is reached.
+
+  // it seems calculating total size of files to be deleted(by compaction) , inhoinno
+  // by doing this, it decide how much files to be compacted , set value 'limit', under certain condition(keep looking), inhoinno 
+  // after calculating, 
   size_t new_compact_bytes_per_del_file = 0;
+  //limit start look up after value 'start'
   for (limit = start + 1; limit < level_files.size(); ++limit) {
+    //calculate total bytes to compacted , inhoinno
     compact_bytes += static_cast<size_t>(level_files[limit]->fd.file_size);
+    
+    // what does 'compensated' mean in here ? , inhoinno
     compensated_compact_bytes += level_files[limit]->compensated_file_size;
     new_compact_bytes_per_del_file = compact_bytes / (limit - start);
     if (level_files[limit]->being_compacted ||
         new_compact_bytes_per_del_file > compact_bytes_per_del_file ||
         compensated_compact_bytes > max_compaction_bytes) {
+
+
       break;
+
     }
     compact_bytes_per_del_file = new_compact_bytes_per_del_file;
   }
 
+  // L0 : ㅁㅁㅁㅁㅁㅁ
+  //        ^start  ^limit
+  //then push level_files[start+1:limit] to 'comp_inputs' ,  inhoinno
   if ((limit - start) >= min_files_to_compact &&
       compact_bytes_per_del_file < max_compact_bytes_per_del_file) {
     assert(comp_inputs != nullptr);
