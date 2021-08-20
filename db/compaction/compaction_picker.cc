@@ -54,11 +54,14 @@ bool FindIntraL0Compaction(const std::vector<FileMetaData*>& level_files,
     // Because all files are sorted in descending order by largest_seqno, so we
     // only need to check the first one.
     if (level_files[start]->fd.largest_seqno <= earliest_mem_seqno) {
-      break;
+      break; //if some files' largest_seqno is smaller than erliest_mem_seqno
+        58       //break loop(= level files are older than memtable file, which is ordinary, seqno = WAL sequence number) inhoinno
     }
   }
   if (start >= level_files.size()) {
     return false;
+    //if we looped whole files, which means all files are not being compacted and all files are older than earliest_mem_seq, 
+    //we dont need to intra-compact L0, inhoinno
   }
   size_t compact_bytes = static_cast<size_t>(level_files[start]->fd.file_size);
   uint64_t compensated_compact_bytes =
