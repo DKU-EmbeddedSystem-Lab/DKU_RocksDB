@@ -1,0 +1,788 @@
+2021/07/13-15:11:55.287286 7f21428a4280 RocksDB version: 6.21.0
+2021/07/13-15:11:55.287313 7f21428a4280 Git sha 31452747f9e8da750425439821006d4bd01b5994
+2021/07/13-15:11:55.287315 7f21428a4280 Compile date 2021-07-01 13:57:01
+2021/07/13-15:11:55.287317 7f21428a4280 DB SUMMARY
+2021/07/13-15:11:55.287318 7f21428a4280 DB Session ID:  07CPONV3V6VBSGYHQHT6
+2021/07/13-15:11:55.287329 7f21428a4280 SST files in ../mnt dir, Total Num: 0, files: 
+2021/07/13-15:11:55.287331 7f21428a4280 Write Ahead Log file in ../mnt: 
+2021/07/13-15:11:55.287332 7f21428a4280                         Options.error_if_exists: 0
+2021/07/13-15:11:55.287334 7f21428a4280                       Options.create_if_missing: 1
+2021/07/13-15:11:55.287335 7f21428a4280                         Options.paranoid_checks: 1
+2021/07/13-15:11:55.287336 7f21428a4280             Options.flush_verify_memtable_count: 1
+2021/07/13-15:11:55.287337 7f21428a4280                               Options.track_and_verify_wals_in_manifest: 0
+2021/07/13-15:11:55.287338 7f21428a4280                                     Options.env: 0x55944dc082a0
+2021/07/13-15:11:55.287339 7f21428a4280                                      Options.fs: Posix File System
+2021/07/13-15:11:55.287340 7f21428a4280                                Options.info_log: 0x55944fb11800
+2021/07/13-15:11:55.287341 7f21428a4280                Options.max_file_opening_threads: 16
+2021/07/13-15:11:55.287343 7f21428a4280                              Options.statistics: (nil)
+2021/07/13-15:11:55.287344 7f21428a4280                               Options.use_fsync: 0
+2021/07/13-15:11:55.287345 7f21428a4280                       Options.max_log_file_size: 0
+2021/07/13-15:11:55.287346 7f21428a4280                  Options.max_manifest_file_size: 1073741824
+2021/07/13-15:11:55.287347 7f21428a4280                   Options.log_file_time_to_roll: 0
+2021/07/13-15:11:55.287348 7f21428a4280                       Options.keep_log_file_num: 1000
+2021/07/13-15:11:55.287349 7f21428a4280                    Options.recycle_log_file_num: 0
+2021/07/13-15:11:55.287350 7f21428a4280                         Options.allow_fallocate: 1
+2021/07/13-15:11:55.287351 7f21428a4280                        Options.allow_mmap_reads: 0
+2021/07/13-15:11:55.287352 7f21428a4280                       Options.allow_mmap_writes: 0
+2021/07/13-15:11:55.287353 7f21428a4280                        Options.use_direct_reads: 0
+2021/07/13-15:11:55.287354 7f21428a4280                        Options.use_direct_io_for_flush_and_compaction: 1
+2021/07/13-15:11:55.287355 7f21428a4280          Options.create_missing_column_families: 0
+2021/07/13-15:11:55.287356 7f21428a4280                              Options.db_log_dir: 
+2021/07/13-15:11:55.287358 7f21428a4280                                 Options.wal_dir: ../mnt
+2021/07/13-15:11:55.287359 7f21428a4280                Options.table_cache_numshardbits: 4
+2021/07/13-15:11:55.287360 7f21428a4280                         Options.WAL_ttl_seconds: 0
+2021/07/13-15:11:55.287361 7f21428a4280                       Options.WAL_size_limit_MB: 0
+2021/07/13-15:11:55.287362 7f21428a4280                        Options.max_write_batch_group_size_bytes: 1048576
+2021/07/13-15:11:55.287363 7f21428a4280             Options.manifest_preallocation_size: 4194304
+2021/07/13-15:11:55.287364 7f21428a4280                     Options.is_fd_close_on_exec: 1
+2021/07/13-15:11:55.287365 7f21428a4280                   Options.advise_random_on_open: 1
+2021/07/13-15:11:55.287366 7f21428a4280                    Options.db_write_buffer_size: 0
+2021/07/13-15:11:55.287367 7f21428a4280                    Options.write_buffer_manager: 0x55944faaee40
+2021/07/13-15:11:55.287368 7f21428a4280         Options.access_hint_on_compaction_start: 1
+2021/07/13-15:11:55.287369 7f21428a4280  Options.new_table_reader_for_compaction_inputs: 1
+2021/07/13-15:11:55.287370 7f21428a4280           Options.random_access_max_buffer_size: 1048576
+2021/07/13-15:11:55.287371 7f21428a4280                      Options.use_adaptive_mutex: 0
+2021/07/13-15:11:55.287372 7f21428a4280                            Options.rate_limiter: (nil)
+2021/07/13-15:11:55.287373 7f21428a4280     Options.sst_file_manager.rate_bytes_per_sec: 0
+2021/07/13-15:11:55.287381 7f21428a4280                       Options.wal_recovery_mode: 2
+2021/07/13-15:11:55.287382 7f21428a4280                  Options.enable_thread_tracking: 0
+2021/07/13-15:11:55.287383 7f21428a4280                  Options.enable_pipelined_write: 1
+2021/07/13-15:11:55.287385 7f21428a4280                  Options.unordered_write: 0
+2021/07/13-15:11:55.287386 7f21428a4280         Options.allow_concurrent_memtable_write: 1
+2021/07/13-15:11:55.287387 7f21428a4280      Options.enable_write_thread_adaptive_yield: 1
+2021/07/13-15:11:55.287388 7f21428a4280             Options.write_thread_max_yield_usec: 100
+2021/07/13-15:11:55.287389 7f21428a4280            Options.write_thread_slow_yield_usec: 3
+2021/07/13-15:11:55.287390 7f21428a4280                               Options.row_cache: None
+2021/07/13-15:11:55.287391 7f21428a4280                              Options.wal_filter: None
+2021/07/13-15:11:55.287392 7f21428a4280             Options.avoid_flush_during_recovery: 0
+2021/07/13-15:11:55.287393 7f21428a4280             Options.allow_ingest_behind: 0
+2021/07/13-15:11:55.287394 7f21428a4280             Options.preserve_deletes: 0
+2021/07/13-15:11:55.287395 7f21428a4280             Options.two_write_queues: 0
+2021/07/13-15:11:55.287396 7f21428a4280             Options.manual_wal_flush: 0
+2021/07/13-15:11:55.287397 7f21428a4280             Options.atomic_flush: 0
+2021/07/13-15:11:55.287398 7f21428a4280             Options.avoid_unnecessary_blocking_io: 0
+2021/07/13-15:11:55.287399 7f21428a4280                 Options.persist_stats_to_disk: 0
+2021/07/13-15:11:55.287400 7f21428a4280                 Options.write_dbid_to_manifest: 0
+2021/07/13-15:11:55.287401 7f21428a4280                 Options.log_readahead_size: 0
+2021/07/13-15:11:55.287402 7f21428a4280                 Options.file_checksum_gen_factory: Unknown
+2021/07/13-15:11:55.287403 7f21428a4280                 Options.best_efforts_recovery: 0
+2021/07/13-15:11:55.287404 7f21428a4280                Options.max_bgerror_resume_count: 2147483647
+2021/07/13-15:11:55.287405 7f21428a4280            Options.bgerror_resume_retry_interval: 1000000
+2021/07/13-15:11:55.287406 7f21428a4280             Options.allow_data_in_errors: 0
+2021/07/13-15:11:55.287407 7f21428a4280             Options.db_host_id: __hostname__
+2021/07/13-15:11:55.287408 7f21428a4280             Options.max_background_jobs: 2
+2021/07/13-15:11:55.287409 7f21428a4280             Options.max_background_compactions: -1
+2021/07/13-15:11:55.287410 7f21428a4280             Options.max_subcompactions: 1
+2021/07/13-15:11:55.287411 7f21428a4280             Options.avoid_flush_during_shutdown: 0
+2021/07/13-15:11:55.287412 7f21428a4280           Options.writable_file_max_buffer_size: 1048576
+2021/07/13-15:11:55.287414 7f21428a4280             Options.delayed_write_rate : 8388608
+2021/07/13-15:11:55.287415 7f21428a4280             Options.max_total_wal_size: 0
+2021/07/13-15:11:55.287416 7f21428a4280             Options.delete_obsolete_files_period_micros: 21600000000
+2021/07/13-15:11:55.287417 7f21428a4280                   Options.stats_dump_period_sec: 600
+2021/07/13-15:11:55.287418 7f21428a4280                 Options.stats_persist_period_sec: 600
+2021/07/13-15:11:55.287419 7f21428a4280                 Options.stats_history_buffer_size: 1048576
+2021/07/13-15:11:55.287420 7f21428a4280                          Options.max_open_files: -1
+2021/07/13-15:11:55.287421 7f21428a4280                          Options.bytes_per_sync: 0
+2021/07/13-15:11:55.287422 7f21428a4280                      Options.wal_bytes_per_sync: 0
+2021/07/13-15:11:55.287423 7f21428a4280                   Options.strict_bytes_per_sync: 0
+2021/07/13-15:11:55.287424 7f21428a4280       Options.compaction_readahead_size: 0
+2021/07/13-15:11:55.287425 7f21428a4280                  Options.max_background_flushes: -1
+2021/07/13-15:11:55.287426 7f21428a4280 Compression algorithms supported:
+2021/07/13-15:11:55.287427 7f21428a4280 	kZSTDNotFinalCompression supported: 1
+2021/07/13-15:11:55.287429 7f21428a4280 	kZSTD supported: 1
+2021/07/13-15:11:55.287434 7f21428a4280 	kXpressCompression supported: 0
+2021/07/13-15:11:55.287435 7f21428a4280 	kLZ4HCCompression supported: 1
+2021/07/13-15:11:55.287437 7f21428a4280 	kLZ4Compression supported: 1
+2021/07/13-15:11:55.287438 7f21428a4280 	kBZip2Compression supported: 1
+2021/07/13-15:11:55.287439 7f21428a4280 	kZlibCompression supported: 1
+2021/07/13-15:11:55.287440 7f21428a4280 	kSnappyCompression supported: 1
+2021/07/13-15:11:55.287442 7f21428a4280 Fast CRC32 supported: Supported on x86
+2021/07/13-15:11:55.290256 7f21428a4280 [/db_impl/db_impl_open.cc:285] Creating manifest 1 
+2021/07/13-15:11:55.297613 7f21428a4280 [/version_set.cc:4578] Recovering from manifest file: ../mnt/MANIFEST-000001
+2021/07/13-15:11:55.297702 7f21428a4280 [/column_family.cc:602] --------------- Options for column family [default]:
+2021/07/13-15:11:55.297707 7f21428a4280               Options.comparator: leveldb.BytewiseComparator
+2021/07/13-15:11:55.297709 7f21428a4280           Options.merge_operator: None
+2021/07/13-15:11:55.297710 7f21428a4280        Options.compaction_filter: None
+2021/07/13-15:11:55.297712 7f21428a4280        Options.compaction_filter_factory: None
+2021/07/13-15:11:55.297713 7f21428a4280  Options.sst_partitioner_factory: None
+2021/07/13-15:11:55.297715 7f21428a4280         Options.memtable_factory: SkipListFactory
+2021/07/13-15:11:55.297716 7f21428a4280            Options.table_factory: BlockBasedTable
+2021/07/13-15:11:55.297750 7f21428a4280            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (0x55944fabbde0)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 1
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  pin_top_level_index_and_filter: 0
+  index_type: 0
+  data_block_index_type: 0
+  index_shortening: 2
+  data_block_hash_table_util_ratio: 0.750000
+  hash_index_allow_collision: 1
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 0x55944faaed30
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 8388608
+    num_shard_bits : 6
+    strict_capacity_limit : 0
+    memory_allocator : None
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: (nil)
+  persistent_cache: (nil)
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: nullptr
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 5
+  enable_index_compression: 1
+  block_align: 0
+2021/07/13-15:11:55.297753 7f21428a4280        Options.write_buffer_size: 67108864
+2021/07/13-15:11:55.297755 7f21428a4280  Options.max_write_buffer_number: 2
+2021/07/13-15:11:55.297757 7f21428a4280          Options.compression: Snappy
+2021/07/13-15:11:55.297758 7f21428a4280                  Options.bottommost_compression: Disabled
+2021/07/13-15:11:55.297760 7f21428a4280       Options.prefix_extractor: nullptr
+2021/07/13-15:11:55.297761 7f21428a4280   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2021/07/13-15:11:55.297762 7f21428a4280             Options.num_levels: 7
+2021/07/13-15:11:55.297764 7f21428a4280        Options.min_write_buffer_number_to_merge: 1
+2021/07/13-15:11:55.297765 7f21428a4280     Options.max_write_buffer_number_to_maintain: 0
+2021/07/13-15:11:55.297767 7f21428a4280     Options.max_write_buffer_size_to_maintain: 0
+2021/07/13-15:11:55.297768 7f21428a4280            Options.bottommost_compression_opts.window_bits: -14
+2021/07/13-15:11:55.297770 7f21428a4280                  Options.bottommost_compression_opts.level: 32767
+2021/07/13-15:11:55.297771 7f21428a4280               Options.bottommost_compression_opts.strategy: 0
+2021/07/13-15:11:55.297773 7f21428a4280         Options.bottommost_compression_opts.max_dict_bytes: 0
+2021/07/13-15:11:55.297774 7f21428a4280         Options.bottommost_compression_opts.zstd_max_train_bytes: 0
+2021/07/13-15:11:55.297775 7f21428a4280         Options.bottommost_compression_opts.parallel_threads: 1
+2021/07/13-15:11:55.297792 7f21428a4280                  Options.bottommost_compression_opts.enabled: false
+2021/07/13-15:11:55.297794 7f21428a4280         Options.bottommost_compression_opts.max_dict_buffer_bytes: 0
+2021/07/13-15:11:55.297796 7f21428a4280            Options.compression_opts.window_bits: -14
+2021/07/13-15:11:55.297797 7f21428a4280                  Options.compression_opts.level: 32767
+2021/07/13-15:11:55.297799 7f21428a4280               Options.compression_opts.strategy: 0
+2021/07/13-15:11:55.297800 7f21428a4280         Options.compression_opts.max_dict_bytes: 0
+2021/07/13-15:11:55.297801 7f21428a4280         Options.compression_opts.zstd_max_train_bytes: 0
+2021/07/13-15:11:55.297803 7f21428a4280         Options.compression_opts.parallel_threads: 1
+2021/07/13-15:11:55.297804 7f21428a4280                  Options.compression_opts.enabled: false
+2021/07/13-15:11:55.297806 7f21428a4280         Options.compression_opts.max_dict_buffer_bytes: 0
+2021/07/13-15:11:55.297807 7f21428a4280      Options.level0_file_num_compaction_trigger: -1
+2021/07/13-15:11:55.297808 7f21428a4280          Options.level0_slowdown_writes_trigger: 20
+2021/07/13-15:11:55.297810 7f21428a4280              Options.level0_stop_writes_trigger: 36
+2021/07/13-15:11:55.297811 7f21428a4280                   Options.target_file_size_base: 67108864
+2021/07/13-15:11:55.297813 7f21428a4280             Options.target_file_size_multiplier: 1
+2021/07/13-15:11:55.297814 7f21428a4280                Options.max_bytes_for_level_base: 268435456
+2021/07/13-15:11:55.297815 7f21428a4280 Options.level_compaction_dynamic_level_bytes: 0
+2021/07/13-15:11:55.297817 7f21428a4280          Options.max_bytes_for_level_multiplier: 10.000000
+2021/07/13-15:11:55.297820 7f21428a4280 Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2021/07/13-15:11:55.297822 7f21428a4280 Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2021/07/13-15:11:55.297823 7f21428a4280 Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2021/07/13-15:11:55.297825 7f21428a4280 Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2021/07/13-15:11:55.297826 7f21428a4280 Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2021/07/13-15:11:55.297827 7f21428a4280 Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2021/07/13-15:11:55.297829 7f21428a4280 Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2021/07/13-15:11:55.297830 7f21428a4280       Options.max_sequential_skip_in_iterations: 8
+2021/07/13-15:11:55.297832 7f21428a4280                    Options.max_compaction_bytes: 1677721600
+2021/07/13-15:11:55.297833 7f21428a4280                        Options.arena_block_size: 1048576
+2021/07/13-15:11:55.297835 7f21428a4280   Options.soft_pending_compaction_bytes_limit: 68719476736
+2021/07/13-15:11:55.297836 7f21428a4280   Options.hard_pending_compaction_bytes_limit: 137438953472
+2021/07/13-15:11:55.297838 7f21428a4280       Options.rate_limit_delay_max_milliseconds: 1000
+2021/07/13-15:11:55.297839 7f21428a4280                Options.disable_auto_compactions: 0
+2021/07/13-15:11:55.297841 7f21428a4280                        Options.compaction_style: kCompactionStyleLevel
+2021/07/13-15:11:55.297843 7f21428a4280                          Options.compaction_pri: kMinOverlappingRatio
+2021/07/13-15:11:55.297844 7f21428a4280 Options.compaction_options_universal.size_ratio: 1
+2021/07/13-15:11:55.297846 7f21428a4280 Options.compaction_options_universal.min_merge_width: 2
+2021/07/13-15:11:55.297847 7f21428a4280 Options.compaction_options_universal.max_merge_width: 4294967295
+2021/07/13-15:11:55.297849 7f21428a4280 Options.compaction_options_universal.max_size_amplification_percent: 200
+2021/07/13-15:11:55.297850 7f21428a4280 Options.compaction_options_universal.compression_size_percent: -1
+2021/07/13-15:11:55.297852 7f21428a4280 Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2021/07/13-15:11:55.297854 7f21428a4280 Options.compaction_options_fifo.max_table_files_size: 0
+2021/07/13-15:11:55.297855 7f21428a4280 Options.compaction_options_fifo.allow_compaction: 1
+2021/07/13-15:11:55.297860 7f21428a4280                   Options.table_properties_collectors: 
+2021/07/13-15:11:55.297882 7f21428a4280                   Options.inplace_update_support: 0
+2021/07/13-15:11:55.297884 7f21428a4280                 Options.inplace_update_num_locks: 10000
+2021/07/13-15:11:55.297885 7f21428a4280               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2021/07/13-15:11:55.297887 7f21428a4280               Options.memtable_whole_key_filtering: 0
+2021/07/13-15:11:55.297889 7f21428a4280   Options.memtable_huge_page_size: 0
+2021/07/13-15:11:55.297890 7f21428a4280                           Options.bloom_locality: 0
+2021/07/13-15:11:55.297892 7f21428a4280                    Options.max_successive_merges: 0
+2021/07/13-15:11:55.297893 7f21428a4280                Options.optimize_filters_for_hits: 0
+2021/07/13-15:11:55.297894 7f21428a4280                Options.paranoid_file_checks: 0
+2021/07/13-15:11:55.297896 7f21428a4280                Options.force_consistency_checks: 1
+2021/07/13-15:11:55.297897 7f21428a4280                Options.report_bg_io_stats: 0
+2021/07/13-15:11:55.297899 7f21428a4280                               Options.ttl: 0
+2021/07/13-15:11:55.297900 7f21428a4280          Options.periodic_compaction_seconds: 0
+2021/07/13-15:11:55.297901 7f21428a4280                    Options.enable_blob_files: true
+2021/07/13-15:11:55.297903 7f21428a4280                        Options.min_blob_size: 0
+2021/07/13-15:11:55.297904 7f21428a4280                       Options.blob_file_size: 268435456
+2021/07/13-15:11:55.297906 7f21428a4280                Options.blob_compression_type: NoCompression
+2021/07/13-15:11:55.297907 7f21428a4280       Options.enable_blob_garbage_collection: false
+2021/07/13-15:11:55.297909 7f21428a4280   Options.blob_garbage_collection_age_cutoff: 0.250000
+2021/07/13-15:11:55.298383 7f21428a4280 [/version_set.cc:4626] Recovered from manifest file:../mnt/MANIFEST-000001 succeeded,manifest_file_number is 1, next_file_number is 3, last_sequence is 0, log_number is 0,prev_log_number is 0,max_column_family is 0,min_log_number_to_keep is 0
+2021/07/13-15:11:55.298390 7f21428a4280 [/version_set.cc:4635] Column family [default] (ID 0), log number is 0
+2021/07/13-15:11:55.298476 7f21428a4280 [/version_set.cc:4124] Creating manifest 4
+2021/07/13-15:11:55.306082 7f21428a4280 [DEBUG] [/db_impl/db_impl_files.cc:337] [JOB 1] Delete ../mnt/MANIFEST-000001 type=3 #1 -- OK
+2021/07/13-15:11:55.313117 7f21428a4280 [/db_impl/db_impl_open.cc:1760] SstFileManager instance 0x55944fabe180
+2021/07/13-15:11:55.313168 7f21428a4280 DB pointer 0x55944fac3c20
+2021/07/13-15:11:55.749522 7f212e7fc700 [/db_impl/db_impl_write.cc:1810] [default] New memtable created with log file: #8. Immutable memtables: 0.
+2021/07/13-15:11:55.749591 7f213fde8700 (Original Log Time 2021/07/13-15:11:55.749580) [/db_impl/db_impl_compaction_flush.cc:2568] Calling FlushMemTableToOutputFile with column family [default], flush slots available 1, compaction slots available 1, flush slots scheduled 1, compaction slots scheduled 0
+2021/07/13-15:11:55.749594 7f213fde8700 [/flush_job.cc:341] [default] [JOB 2] Flushing memtable with next log file: 8
+2021/07/13-15:11:55.749609 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156715749605, "job": 2, "event": "flush_started", "num_memtables": 1, "num_entries": 119113, "num_deletes": 0, "total_data_size": 64201907, "memory_usage": 67110584, "flush_reason": "Write Buffer Full"}
+2021/07/13-15:11:55.749611 7f213fde8700 [/flush_job.cc:370] [default] [JOB 2] Level-0 flush table #9: started
+2021/07/13-15:11:55.987032 7f213fde8700 [/blob/blob_file_builder.cc:308] [default] [JOB 2] Generated blob file #10: 118939 total blobs, 66605840 total bytes
+2021/07/13-15:11:55.988253 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156715988238, "cf_name": "default", "job": 2, "event": "table_file_creation", "file_number": 9, "file_size": 1970093, "file_checksum": "", "file_checksum_func_name": "Unknown", "table_properties": {"data_size": 1957680, "index_size": 16213, "index_partitions": 0, "top_level_index_size": 0, "index_key_is_user_key": 1, "index_value_is_delta_encoded": 1, "filter_size": 0, "raw_key_size": 2854536, "raw_average_key_size": 24, "raw_value_size": 1066675, "raw_average_value_size": 8, "num_data_blocks": 889, "num_entries": 118939, "num_filter_entries": 0, "num_deletions": 0, "num_merge_operands": 0, "num_range_deletions": 0, "format_version": 0, "fixed_key_len": 0, "filter_policy": "", "column_family_name": "default", "column_family_id": 0, "comparator": "leveldb.BytewiseComparator", "merge_operator": "nullptr", "prefix_extractor_name": "nullptr", "property_collectors": "[]", "compression": "Snappy", "compression_options": "window_bits=-14; level=32767; strategy=0; max_dict_bytes=0; zstd_max_train_bytes=0; enabled=0; max_dict_buffer_bytes=0; ", "creation_time": 1626156715, "oldest_key_time": 1626156715, "file_creation_time": 1626156715, "slow_compression_estimated_data_size": 0, "fast_compression_estimated_data_size": 0, "db_id": "da0da3e1-6330-4ded-a8f3-500e4938af5e", "db_session_id": "07CPONV3V6VBSGYHQHT6"}, "oldest_blob_file_number": 10}
+2021/07/13-15:11:55.988265 7f213fde8700 [/flush_job.cc:449] [default] [JOB 2] Level-0 flush table #9: 1970093 bytes OK
+2021/07/13-15:11:55.992665 7f213fde8700 (Original Log Time 2021/07/13-15:11:55.990424) [/memtable_list.cc:457] [default] Level-0 commit table #9 (+1 blob files) started
+2021/07/13-15:11:55.992682 7f213fde8700 (Original Log Time 2021/07/13-15:11:55.992622) [/memtable_list.cc:639] [default] Level-0 commit table #9 (+1 blob files): memtable #1 done
+2021/07/13-15:11:55.992683 7f213fde8700 (Original Log Time 2021/07/13-15:11:55.992631) EVENT_LOG_v1 {"time_micros": 1626156715992627, "job": 2, "event": "flush_finished", "output_compression": "Snappy", "lsm_state": [1, 0, 0, 0, 0, 0, 0], "blob_file_head": 10, "blob_file_tail": 10, "immutable_memtables": 0}
+2021/07/13-15:11:55.992684 7f213fde8700 (Original Log Time 2021/07/13-15:11:55.992640) [/db_impl/db_impl_compaction_flush.cc:241] [default] Level summary: files[1 0 0 0 0 0 0] max score 0.01
+2021/07/13-15:11:55.992685 7f213fde8700 (Original Log Time 2021/07/13-15:11:55.992640) [/db_impl/db_impl_compaction_flush.cc:249] [default] Blob file summary: head=10, tail=10
+2021/07/13-15:11:55.992687 7f213fde8700 [/db_impl/db_impl_files.cc:422] [JOB 2] Try to delete WAL files size 64797472, prev total WAL file size 102819808, number of live WAL files 2.
+2021/07/13-15:11:55.997156 7f213fde8700 [le/delete_scheduler.cc:77] Deleted file ../mnt/000005.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2021/07/13-15:11:55.997160 7f213fde8700 [DEBUG] [/db_impl/db_impl_files.cc:337] [JOB 2] Delete ../mnt/000005.log type=0 #5 -- OK
+2021/07/13-15:11:56.176217 7f212e7fc700 [/db_impl/db_impl_write.cc:1810] [default] New memtable created with log file: #11. Immutable memtables: 0.
+2021/07/13-15:11:56.176280 7f213fde8700 (Original Log Time 2021/07/13-15:11:56.176270) [/db_impl/db_impl_compaction_flush.cc:2568] Calling FlushMemTableToOutputFile with column family [default], flush slots available 1, compaction slots available 1, flush slots scheduled 1, compaction slots scheduled 0
+2021/07/13-15:11:56.176283 7f213fde8700 [/flush_job.cc:341] [default] [JOB 3] Flushing memtable with next log file: 11
+2021/07/13-15:11:56.176293 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156716176290, "job": 3, "event": "flush_started", "num_memtables": 1, "num_entries": 119112, "num_deletes": 0, "total_data_size": 64201368, "memory_usage": 67000544, "flush_reason": "Write Buffer Full"}
+2021/07/13-15:11:56.176295 7f213fde8700 [/flush_job.cc:370] [default] [JOB 3] Level-0 flush table #12: started
+2021/07/13-15:11:56.414892 7f213fde8700 [/blob/blob_file_builder.cc:308] [default] [JOB 3] Generated blob file #13: 118986 total blobs, 66632160 total bytes
+2021/07/13-15:11:56.415207 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156716415193, "cf_name": "default", "job": 3, "event": "table_file_creation", "file_number": 12, "file_size": 1962996, "file_checksum": "", "file_checksum_func_name": "Unknown", "table_properties": {"data_size": 1950564, "index_size": 16222, "index_partitions": 0, "top_level_index_size": 0, "index_key_is_user_key": 1, "index_value_is_delta_encoded": 1, "filter_size": 0, "raw_key_size": 2855664, "raw_average_key_size": 24, "raw_value_size": 1067098, "raw_average_value_size": 8, "num_data_blocks": 889, "num_entries": 118986, "num_filter_entries": 0, "num_deletions": 0, "num_merge_operands": 0, "num_range_deletions": 0, "format_version": 0, "fixed_key_len": 0, "filter_policy": "", "column_family_name": "default", "column_family_id": 0, "comparator": "leveldb.BytewiseComparator", "merge_operator": "nullptr", "prefix_extractor_name": "nullptr", "property_collectors": "[]", "compression": "Snappy", "compression_options": "window_bits=-14; level=32767; strategy=0; max_dict_bytes=0; zstd_max_train_bytes=0; enabled=0; max_dict_buffer_bytes=0; ", "creation_time": 1626156715, "oldest_key_time": 1626156715, "file_creation_time": 1626156716, "slow_compression_estimated_data_size": 0, "fast_compression_estimated_data_size": 0, "db_id": "da0da3e1-6330-4ded-a8f3-500e4938af5e", "db_session_id": "07CPONV3V6VBSGYHQHT6"}, "oldest_blob_file_number": 13}
+2021/07/13-15:11:56.415219 7f213fde8700 [/flush_job.cc:449] [default] [JOB 3] Level-0 flush table #12: 1962996 bytes OK
+2021/07/13-15:11:56.419810 7f213fde8700 (Original Log Time 2021/07/13-15:11:56.417495) [/memtable_list.cc:457] [default] Level-0 commit table #12 (+1 blob files) started
+2021/07/13-15:11:56.419828 7f213fde8700 (Original Log Time 2021/07/13-15:11:56.419767) [/memtable_list.cc:639] [default] Level-0 commit table #12 (+1 blob files): memtable #1 done
+2021/07/13-15:11:56.419829 7f213fde8700 (Original Log Time 2021/07/13-15:11:56.419777) EVENT_LOG_v1 {"time_micros": 1626156716419774, "job": 3, "event": "flush_finished", "output_compression": "Snappy", "lsm_state": [2, 0, 0, 0, 0, 0, 0], "blob_file_head": 10, "blob_file_tail": 13, "immutable_memtables": 0}
+2021/07/13-15:11:56.419829 7f213fde8700 (Original Log Time 2021/07/13-15:11:56.419785) [/db_impl/db_impl_compaction_flush.cc:241] [default] Level summary: files[2 0 0 0 0 0 0] max score 0.01
+2021/07/13-15:11:56.419830 7f213fde8700 (Original Log Time 2021/07/13-15:11:56.419785) [/db_impl/db_impl_compaction_flush.cc:249] [default] Blob file summary: head=10, tail=13
+2021/07/13-15:11:56.419833 7f213fde8700 [/db_impl/db_impl_files.cc:422] [JOB 3] Try to delete WAL files size 64796928, prev total WAL file size 102948192, number of live WAL files 2.
+2021/07/13-15:11:56.424337 7f213fde8700 [le/delete_scheduler.cc:77] Deleted file ../mnt/000008.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2021/07/13-15:11:56.424341 7f213fde8700 [DEBUG] [/db_impl/db_impl_files.cc:337] [JOB 3] Delete ../mnt/000008.log type=0 #8 -- OK
+2021/07/13-15:11:56.592658 7f212e7fc700 [/db_impl/db_impl_write.cc:1810] [default] New memtable created with log file: #14. Immutable memtables: 0.
+2021/07/13-15:11:56.592722 7f213fde8700 (Original Log Time 2021/07/13-15:11:56.592711) [/db_impl/db_impl_compaction_flush.cc:2568] Calling FlushMemTableToOutputFile with column family [default], flush slots available 1, compaction slots available 1, flush slots scheduled 1, compaction slots scheduled 0
+2021/07/13-15:11:56.592724 7f213fde8700 [/flush_job.cc:341] [default] [JOB 4] Flushing memtable with next log file: 14
+2021/07/13-15:11:56.592734 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156716592731, "job": 4, "event": "flush_started", "num_memtables": 1, "num_entries": 119111, "num_deletes": 0, "total_data_size": 64200829, "memory_usage": 66850328, "flush_reason": "Write Buffer Full"}
+2021/07/13-15:11:56.592735 7f213fde8700 [/flush_job.cc:370] [default] [JOB 4] Level-0 flush table #15: started
+2021/07/13-15:11:56.832067 7f213fde8700 [/blob/blob_file_builder.cc:308] [default] [JOB 4] Generated blob file #16: 118956 total blobs, 66615360 total bytes
+2021/07/13-15:11:56.832376 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156716832362, "cf_name": "default", "job": 4, "event": "table_file_creation", "file_number": 15, "file_size": 1963459, "file_checksum": "", "file_checksum_func_name": "Unknown", "table_properties": {"data_size": 1951081, "index_size": 16201, "index_partitions": 0, "top_level_index_size": 0, "index_key_is_user_key": 1, "index_value_is_delta_encoded": 1, "filter_size": 0, "raw_key_size": 2854944, "raw_average_key_size": 24, "raw_value_size": 1066828, "raw_average_value_size": 8, "num_data_blocks": 889, "num_entries": 118956, "num_filter_entries": 0, "num_deletions": 0, "num_merge_operands": 0, "num_range_deletions": 0, "format_version": 0, "fixed_key_len": 0, "filter_policy": "", "column_family_name": "default", "column_family_id": 0, "comparator": "leveldb.BytewiseComparator", "merge_operator": "nullptr", "prefix_extractor_name": "nullptr", "property_collectors": "[]", "compression": "Snappy", "compression_options": "window_bits=-14; level=32767; strategy=0; max_dict_bytes=0; zstd_max_train_bytes=0; enabled=0; max_dict_buffer_bytes=0; ", "creation_time": 1626156716, "oldest_key_time": 1626156716, "file_creation_time": 1626156716, "slow_compression_estimated_data_size": 0, "fast_compression_estimated_data_size": 0, "db_id": "da0da3e1-6330-4ded-a8f3-500e4938af5e", "db_session_id": "07CPONV3V6VBSGYHQHT6"}, "oldest_blob_file_number": 16}
+2021/07/13-15:11:56.832389 7f213fde8700 [/flush_job.cc:449] [default] [JOB 4] Level-0 flush table #15: 1963459 bytes OK
+2021/07/13-15:11:56.836697 7f213fde8700 (Original Log Time 2021/07/13-15:11:56.834414) [/memtable_list.cc:457] [default] Level-0 commit table #15 (+1 blob files) started
+2021/07/13-15:11:56.836699 7f213fde8700 (Original Log Time 2021/07/13-15:11:56.836655) [/memtable_list.cc:639] [default] Level-0 commit table #15 (+1 blob files): memtable #1 done
+2021/07/13-15:11:56.836715 7f213fde8700 (Original Log Time 2021/07/13-15:11:56.836665) EVENT_LOG_v1 {"time_micros": 1626156716836661, "job": 4, "event": "flush_finished", "output_compression": "Snappy", "lsm_state": [3, 0, 0, 0, 0, 0, 0], "blob_file_head": 10, "blob_file_tail": 16, "immutable_memtables": 0}
+2021/07/13-15:11:56.836716 7f213fde8700 (Original Log Time 2021/07/13-15:11:56.836673) [/db_impl/db_impl_compaction_flush.cc:241] [default] Level summary: files[3 0 0 0 0 0 0] max score 0.02
+2021/07/13-15:11:56.836717 7f213fde8700 (Original Log Time 2021/07/13-15:11:56.836673) [/db_impl/db_impl_compaction_flush.cc:249] [default] Blob file summary: head=10, tail=16
+2021/07/13-15:11:56.836720 7f213fde8700 [/db_impl/db_impl_files.cc:422] [JOB 4] Try to delete WAL files size 64796384, prev total WAL file size 102925344, number of live WAL files 2.
+2021/07/13-15:11:56.841211 7f213fde8700 [le/delete_scheduler.cc:77] Deleted file ../mnt/000011.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2021/07/13-15:11:56.841214 7f213fde8700 [DEBUG] [/db_impl/db_impl_files.cc:337] [JOB 4] Delete ../mnt/000011.log type=0 #11 -- OK
+2021/07/13-15:11:57.014314 7f212e7fc700 [/db_impl/db_impl_write.cc:1810] [default] New memtable created with log file: #17. Immutable memtables: 0.
+2021/07/13-15:11:57.014378 7f213fde8700 (Original Log Time 2021/07/13-15:11:57.014368) [/db_impl/db_impl_compaction_flush.cc:2568] Calling FlushMemTableToOutputFile with column family [default], flush slots available 1, compaction slots available 1, flush slots scheduled 1, compaction slots scheduled 0
+2021/07/13-15:11:57.014380 7f213fde8700 [/flush_job.cc:341] [default] [JOB 5] Flushing memtable with next log file: 17
+2021/07/13-15:11:57.014390 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156717014387, "job": 5, "event": "flush_started", "num_memtables": 1, "num_entries": 119115, "num_deletes": 0, "total_data_size": 64202985, "memory_usage": 66850016, "flush_reason": "Write Buffer Full"}
+2021/07/13-15:11:57.014391 7f213fde8700 [/flush_job.cc:370] [default] [JOB 5] Level-0 flush table #18: started
+2021/07/13-15:11:57.254670 7f213fde8700 [/blob/blob_file_builder.cc:308] [default] [JOB 5] Generated blob file #19: 118982 total blobs, 66629920 total bytes
+2021/07/13-15:11:57.254980 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156717254966, "cf_name": "default", "job": 5, "event": "table_file_creation", "file_number": 18, "file_size": 1963486, "file_checksum": "", "file_checksum_func_name": "Unknown", "table_properties": {"data_size": 1951081, "index_size": 16228, "index_partitions": 0, "top_level_index_size": 0, "index_key_is_user_key": 1, "index_value_is_delta_encoded": 1, "filter_size": 0, "raw_key_size": 2855568, "raw_average_key_size": 24, "raw_value_size": 1067062, "raw_average_value_size": 8, "num_data_blocks": 889, "num_entries": 118982, "num_filter_entries": 0, "num_deletions": 0, "num_merge_operands": 0, "num_range_deletions": 0, "format_version": 0, "fixed_key_len": 0, "filter_policy": "", "column_family_name": "default", "column_family_id": 0, "comparator": "leveldb.BytewiseComparator", "merge_operator": "nullptr", "prefix_extractor_name": "nullptr", "property_collectors": "[]", "compression": "Snappy", "compression_options": "window_bits=-14; level=32767; strategy=0; max_dict_bytes=0; zstd_max_train_bytes=0; enabled=0; max_dict_buffer_bytes=0; ", "creation_time": 1626156716, "oldest_key_time": 1626156716, "file_creation_time": 1626156717, "slow_compression_estimated_data_size": 0, "fast_compression_estimated_data_size": 0, "db_id": "da0da3e1-6330-4ded-a8f3-500e4938af5e", "db_session_id": "07CPONV3V6VBSGYHQHT6"}, "oldest_blob_file_number": 19}
+2021/07/13-15:11:57.254992 7f213fde8700 [/flush_job.cc:449] [default] [JOB 5] Level-0 flush table #18: 1963486 bytes OK
+2021/07/13-15:11:57.259453 7f213fde8700 (Original Log Time 2021/07/13-15:11:57.257175) [/memtable_list.cc:457] [default] Level-0 commit table #18 (+1 blob files) started
+2021/07/13-15:11:57.259455 7f213fde8700 (Original Log Time 2021/07/13-15:11:57.259411) [/memtable_list.cc:639] [default] Level-0 commit table #18 (+1 blob files): memtable #1 done
+2021/07/13-15:11:57.259456 7f213fde8700 (Original Log Time 2021/07/13-15:11:57.259420) EVENT_LOG_v1 {"time_micros": 1626156717259417, "job": 5, "event": "flush_finished", "output_compression": "Snappy", "lsm_state": [4, 0, 0, 0, 0, 0, 0], "blob_file_head": 10, "blob_file_tail": 19, "immutable_memtables": 0}
+2021/07/13-15:11:57.259457 7f213fde8700 (Original Log Time 2021/07/13-15:11:57.259429) [/db_impl/db_impl_compaction_flush.cc:241] [default] Level summary: files[4 0 0 0 0 0 0] max score 0.03
+2021/07/13-15:11:57.259458 7f213fde8700 (Original Log Time 2021/07/13-15:11:57.259429) [/db_impl/db_impl_compaction_flush.cc:249] [default] Blob file summary: head=10, tail=19
+2021/07/13-15:11:57.259476 7f213fde8700 [/db_impl/db_impl_files.cc:422] [JOB 5] Try to delete WAL files size 64798560, prev total WAL file size 104207552, number of live WAL files 2.
+2021/07/13-15:11:57.263967 7f213fde8700 [le/delete_scheduler.cc:77] Deleted file ../mnt/000014.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2021/07/13-15:11:57.263971 7f213fde8700 [DEBUG] [/db_impl/db_impl_files.cc:337] [JOB 5] Delete ../mnt/000014.log type=0 #14 -- OK
+2021/07/13-15:11:57.427124 7f212e7fc700 [/db_impl/db_impl_write.cc:1810] [default] New memtable created with log file: #20. Immutable memtables: 0.
+2021/07/13-15:11:57.427188 7f213fde8700 (Original Log Time 2021/07/13-15:11:57.427178) [/db_impl/db_impl_compaction_flush.cc:2568] Calling FlushMemTableToOutputFile with column family [default], flush slots available 1, compaction slots available 1, flush slots scheduled 1, compaction slots scheduled 0
+2021/07/13-15:11:57.427190 7f213fde8700 [/flush_job.cc:341] [default] [JOB 6] Flushing memtable with next log file: 20
+2021/07/13-15:11:57.427201 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156717427198, "job": 6, "event": "flush_started", "num_memtables": 1, "num_entries": 119114, "num_deletes": 0, "total_data_size": 64202446, "memory_usage": 66850184, "flush_reason": "Write Buffer Full"}
+2021/07/13-15:11:57.427202 7f213fde8700 [/flush_job.cc:370] [default] [JOB 6] Level-0 flush table #21: started
+2021/07/13-15:11:57.665392 7f213fde8700 [/blob/blob_file_builder.cc:308] [default] [JOB 6] Generated blob file #22: 118976 total blobs, 66626560 total bytes
+2021/07/13-15:11:57.665716 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156717665701, "cf_name": "default", "job": 6, "event": "table_file_creation", "file_number": 21, "file_size": 1963901, "file_checksum": "", "file_checksum_func_name": "Unknown", "table_properties": {"data_size": 1951514, "index_size": 16212, "index_partitions": 0, "top_level_index_size": 0, "index_key_is_user_key": 1, "index_value_is_delta_encoded": 1, "filter_size": 0, "raw_key_size": 2855424, "raw_average_key_size": 24, "raw_value_size": 1067008, "raw_average_value_size": 8, "num_data_blocks": 889, "num_entries": 118976, "num_filter_entries": 0, "num_deletions": 0, "num_merge_operands": 0, "num_range_deletions": 0, "format_version": 0, "fixed_key_len": 0, "filter_policy": "", "column_family_name": "default", "column_family_id": 0, "comparator": "leveldb.BytewiseComparator", "merge_operator": "nullptr", "prefix_extractor_name": "nullptr", "property_collectors": "[]", "compression": "Snappy", "compression_options": "window_bits=-14; level=32767; strategy=0; max_dict_bytes=0; zstd_max_train_bytes=0; enabled=0; max_dict_buffer_bytes=0; ", "creation_time": 1626156717, "oldest_key_time": 1626156717, "file_creation_time": 1626156717, "slow_compression_estimated_data_size": 0, "fast_compression_estimated_data_size": 0, "db_id": "da0da3e1-6330-4ded-a8f3-500e4938af5e", "db_session_id": "07CPONV3V6VBSGYHQHT6"}, "oldest_blob_file_number": 22}
+2021/07/13-15:11:57.665729 7f213fde8700 [/flush_job.cc:449] [default] [JOB 6] Level-0 flush table #21: 1963901 bytes OK
+2021/07/13-15:11:57.669915 7f213fde8700 (Original Log Time 2021/07/13-15:11:57.667728) [/memtable_list.cc:457] [default] Level-0 commit table #21 (+1 blob files) started
+2021/07/13-15:11:57.669917 7f213fde8700 (Original Log Time 2021/07/13-15:11:57.669847) [/memtable_list.cc:639] [default] Level-0 commit table #21 (+1 blob files): memtable #1 done
+2021/07/13-15:11:57.669918 7f213fde8700 (Original Log Time 2021/07/13-15:11:57.669857) EVENT_LOG_v1 {"time_micros": 1626156717669853, "job": 6, "event": "flush_finished", "output_compression": "Snappy", "lsm_state": [5, 0, 0, 0, 0, 0, 0], "blob_file_head": 10, "blob_file_tail": 22, "immutable_memtables": 0}
+2021/07/13-15:11:57.669919 7f213fde8700 (Original Log Time 2021/07/13-15:11:57.669888) [/db_impl/db_impl_compaction_flush.cc:241] [default] Level summary: files[5 0 0 0 0 0 0] max score 0.04
+2021/07/13-15:11:57.669920 7f213fde8700 (Original Log Time 2021/07/13-15:11:57.669888) [/db_impl/db_impl_compaction_flush.cc:249] [default] Blob file summary: head=10, tail=22
+2021/07/13-15:11:57.669923 7f213fde8700 [/db_impl/db_impl_files.cc:422] [JOB 6] Try to delete WAL files size 64798016, prev total WAL file size 104873408, number of live WAL files 2.
+2021/07/13-15:11:57.674455 7f213fde8700 [le/delete_scheduler.cc:77] Deleted file ../mnt/000017.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2021/07/13-15:11:57.674459 7f213fde8700 [DEBUG] [/db_impl/db_impl_files.cc:337] [JOB 6] Delete ../mnt/000017.log type=0 #17 -- OK
+2021/07/13-15:11:57.831789 7f212e7fc700 [/db_impl/db_impl_write.cc:1810] [default] New memtable created with log file: #23. Immutable memtables: 0.
+2021/07/13-15:11:57.831853 7f213fde8700 (Original Log Time 2021/07/13-15:11:57.831843) [/db_impl/db_impl_compaction_flush.cc:2568] Calling FlushMemTableToOutputFile with column family [default], flush slots available 1, compaction slots available 1, flush slots scheduled 1, compaction slots scheduled 0
+2021/07/13-15:11:57.831855 7f213fde8700 [/flush_job.cc:341] [default] [JOB 7] Flushing memtable with next log file: 23
+2021/07/13-15:11:57.831879 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156717831862, "job": 7, "event": "flush_started", "num_memtables": 1, "num_entries": 119105, "num_deletes": 0, "total_data_size": 64197595, "memory_usage": 66849896, "flush_reason": "Write Buffer Full"}
+2021/07/13-15:11:57.831881 7f213fde8700 [/flush_job.cc:370] [default] [JOB 7] Level-0 flush table #24: started
+2021/07/13-15:11:58.073089 7f213fde8700 [/blob/blob_file_builder.cc:308] [default] [JOB 7] Generated blob file #25: 118984 total blobs, 66631040 total bytes
+2021/07/13-15:11:58.073366 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156718073351, "cf_name": "default", "job": 7, "event": "table_file_creation", "file_number": 24, "file_size": 1963727, "file_checksum": "", "file_checksum_func_name": "Unknown", "table_properties": {"data_size": 1951281, "index_size": 16245, "index_partitions": 0, "top_level_index_size": 0, "index_key_is_user_key": 1, "index_value_is_delta_encoded": 1, "filter_size": 0, "raw_key_size": 2855616, "raw_average_key_size": 24, "raw_value_size": 1067080, "raw_average_value_size": 8, "num_data_blocks": 889, "num_entries": 118984, "num_filter_entries": 0, "num_deletions": 0, "num_merge_operands": 0, "num_range_deletions": 0, "format_version": 0, "fixed_key_len": 0, "filter_policy": "", "column_family_name": "default", "column_family_id": 0, "comparator": "leveldb.BytewiseComparator", "merge_operator": "nullptr", "prefix_extractor_name": "nullptr", "property_collectors": "[]", "compression": "Snappy", "compression_options": "window_bits=-14; level=32767; strategy=0; max_dict_bytes=0; zstd_max_train_bytes=0; enabled=0; max_dict_buffer_bytes=0; ", "creation_time": 1626156717, "oldest_key_time": 1626156717, "file_creation_time": 1626156717, "slow_compression_estimated_data_size": 0, "fast_compression_estimated_data_size": 0, "db_id": "da0da3e1-6330-4ded-a8f3-500e4938af5e", "db_session_id": "07CPONV3V6VBSGYHQHT6"}, "oldest_blob_file_number": 25}
+2021/07/13-15:11:58.073378 7f213fde8700 [/flush_job.cc:449] [default] [JOB 7] Level-0 flush table #24: 1963727 bytes OK
+2021/07/13-15:11:58.077780 7f213fde8700 (Original Log Time 2021/07/13-15:11:58.075483) [/memtable_list.cc:457] [default] Level-0 commit table #24 (+1 blob files) started
+2021/07/13-15:11:58.077782 7f213fde8700 (Original Log Time 2021/07/13-15:11:58.077735) [/memtable_list.cc:639] [default] Level-0 commit table #24 (+1 blob files): memtable #1 done
+2021/07/13-15:11:58.077783 7f213fde8700 (Original Log Time 2021/07/13-15:11:58.077746) EVENT_LOG_v1 {"time_micros": 1626156718077742, "job": 7, "event": "flush_finished", "output_compression": "Snappy", "lsm_state": [6, 0, 0, 0, 0, 0, 0], "blob_file_head": 10, "blob_file_tail": 25, "immutable_memtables": 0}
+2021/07/13-15:11:58.077784 7f213fde8700 (Original Log Time 2021/07/13-15:11:58.077754) [/db_impl/db_impl_compaction_flush.cc:241] [default] Level summary: files[6 0 0 0 0 0 0] max score 0.04
+2021/07/13-15:11:58.077785 7f213fde8700 (Original Log Time 2021/07/13-15:11:58.077755) [/db_impl/db_impl_compaction_flush.cc:249] [default] Blob file summary: head=10, tail=25
+2021/07/13-15:11:58.077805 7f213fde8700 [/db_impl/db_impl_files.cc:422] [JOB 7] Try to delete WAL files size 64793120, prev total WAL file size 105009952, number of live WAL files 2.
+2021/07/13-15:11:58.082360 7f213fde8700 [le/delete_scheduler.cc:77] Deleted file ../mnt/000020.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2021/07/13-15:11:58.082363 7f213fde8700 [DEBUG] [/db_impl/db_impl_files.cc:337] [JOB 7] Delete ../mnt/000020.log type=0 #20 -- OK
+2021/07/13-15:11:58.242334 7f212e7fc700 [/db_impl/db_impl_write.cc:1810] [default] New memtable created with log file: #26. Immutable memtables: 0.
+2021/07/13-15:11:58.242401 7f213fde8700 (Original Log Time 2021/07/13-15:11:58.242390) [/db_impl/db_impl_compaction_flush.cc:2568] Calling FlushMemTableToOutputFile with column family [default], flush slots available 1, compaction slots available 1, flush slots scheduled 1, compaction slots scheduled 0
+2021/07/13-15:11:58.242403 7f213fde8700 [/flush_job.cc:341] [default] [JOB 8] Flushing memtable with next log file: 26
+2021/07/13-15:11:58.242414 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156718242411, "job": 8, "event": "flush_started", "num_memtables": 1, "num_entries": 119114, "num_deletes": 0, "total_data_size": 64202446, "memory_usage": 66850000, "flush_reason": "Write Buffer Full"}
+2021/07/13-15:11:58.242415 7f213fde8700 [/flush_job.cc:370] [default] [JOB 8] Level-0 flush table #27: started
+2021/07/13-15:11:58.313408 7f212dffb700 [/db_impl/db_impl.cc:945] ------- DUMPING STATS -------
+2021/07/13-15:11:58.313419 7f212dffb700 [/db_impl/db_impl.cc:946] 
+** DB Stats **
+Uptime(secs): 3.0 total, 3.0 interval
+Cumulative writes: 854K writes, 854K keys, 854K commit groups, 1.0 writes per commit group, ingest: 0.43 GB, 147.09 MB/s
+Cumulative WAL: 854K writes, 0 syncs, 854975.00 writes per sync, written: 0.43 GB, 147.09 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 854K writes, 854K keys, 854K commit groups, 1.0 writes per commit group, ingest: 443.56 MB, 147.09 MB/s
+Interval WAL: 854K writes, 0 syncs, 854975.00 writes per sync, written: 0.43 GB, 147.09 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  L0      6/0   11.24 MB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   1.0      0.0    270.5      1.45              0.61         6    0.242       0      0       0.0       0.4
+ Sum      6/0   11.24 MB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   1.0      0.0    270.5      1.45              0.61         6    0.242       0      0       0.0       0.4
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   1.0      0.0    270.5      1.45              0.61         6    0.242       0      0       0.0       0.4
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+High      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0    270.5      1.45              0.61         6    0.242       0      0       0.0       0.4
+
+Blob file count: 6, total size: 0.4 GB
+
+Uptime(secs): 3.0 total, 3.0 interval
+Flush(GB): cumulative 0.383, interval 0.383
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.38 GB write, 130.14 MB/s write, 0.00 GB read, 0.00 MB/s read, 1.5 seconds
+Interval compaction: 0.38 GB write, 130.14 MB/s write, 0.00 GB read, 0.00 MB/s read, 1.5 seconds
+Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 0 total count
+Block cache LRUCache@0x55944faaed30 capacity: 8.00 MB collections: 1 last_copies: 1 last_secs: 4e-05 secs_since: 3
+Block cache entry stats(count,size,portion): Misc(1,0.00 KB,0%)
+
+** File Read Latency Histogram By Level [default] **
+2021/07/13-15:11:58.481077 7f213fde8700 [/blob/blob_file_builder.cc:308] [default] [JOB 8] Generated blob file #28: 118969 total blobs, 66622640 total bytes
+2021/07/13-15:11:58.481388 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156718481374, "cf_name": "default", "job": 8, "event": "table_file_creation", "file_number": 27, "file_size": 1963931, "file_checksum": "", "file_checksum_func_name": "Unknown", "table_properties": {"data_size": 1951564, "index_size": 16195, "index_partitions": 0, "top_level_index_size": 0, "index_key_is_user_key": 1, "index_value_is_delta_encoded": 1, "filter_size": 0, "raw_key_size": 2855256, "raw_average_key_size": 24, "raw_value_size": 1066945, "raw_average_value_size": 8, "num_data_blocks": 889, "num_entries": 118969, "num_filter_entries": 0, "num_deletions": 0, "num_merge_operands": 0, "num_range_deletions": 0, "format_version": 0, "fixed_key_len": 0, "filter_policy": "", "column_family_name": "default", "column_family_id": 0, "comparator": "leveldb.BytewiseComparator", "merge_operator": "nullptr", "prefix_extractor_name": "nullptr", "property_collectors": "[]", "compression": "Snappy", "compression_options": "window_bits=-14; level=32767; strategy=0; max_dict_bytes=0; zstd_max_train_bytes=0; enabled=0; max_dict_buffer_bytes=0; ", "creation_time": 1626156717, "oldest_key_time": 1626156717, "file_creation_time": 1626156718, "slow_compression_estimated_data_size": 0, "fast_compression_estimated_data_size": 0, "db_id": "da0da3e1-6330-4ded-a8f3-500e4938af5e", "db_session_id": "07CPONV3V6VBSGYHQHT6"}, "oldest_blob_file_number": 28}
+2021/07/13-15:11:58.481401 7f213fde8700 [/flush_job.cc:449] [default] [JOB 8] Level-0 flush table #27: 1963931 bytes OK
+2021/07/13-15:11:58.485794 7f213fde8700 (Original Log Time 2021/07/13-15:11:58.483494) [/memtable_list.cc:457] [default] Level-0 commit table #27 (+1 blob files) started
+2021/07/13-15:11:58.485796 7f213fde8700 (Original Log Time 2021/07/13-15:11:58.485761) [/memtable_list.cc:639] [default] Level-0 commit table #27 (+1 blob files): memtable #1 done
+2021/07/13-15:11:58.485797 7f213fde8700 (Original Log Time 2021/07/13-15:11:58.485771) EVENT_LOG_v1 {"time_micros": 1626156718485768, "job": 8, "event": "flush_finished", "output_compression": "Snappy", "lsm_state": [7, 0, 0, 0, 0, 0, 0], "blob_file_head": 10, "blob_file_tail": 28, "immutable_memtables": 0}
+2021/07/13-15:11:58.485798 7f213fde8700 (Original Log Time 2021/07/13-15:11:58.485780) [/db_impl/db_impl_compaction_flush.cc:241] [default] Level summary: files[7 0 0 0 0 0 0] max score 0.05
+2021/07/13-15:11:58.485799 7f213fde8700 (Original Log Time 2021/07/13-15:11:58.485781) [/db_impl/db_impl_compaction_flush.cc:249] [default] Blob file summary: head=10, tail=28
+2021/07/13-15:11:58.485802 7f213fde8700 [/db_impl/db_impl_files.cc:422] [JOB 8] Try to delete WAL files size 64798016, prev total WAL file size 102880736, number of live WAL files 2.
+2021/07/13-15:11:58.490301 7f213fde8700 [le/delete_scheduler.cc:77] Deleted file ../mnt/000023.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2021/07/13-15:11:58.490305 7f213fde8700 [DEBUG] [/db_impl/db_impl_files.cc:337] [JOB 8] Delete ../mnt/000023.log type=0 #23 -- OK
+2021/07/13-15:11:58.661855 7f212e7fc700 [/db_impl/db_impl_write.cc:1810] [default] New memtable created with log file: #29. Immutable memtables: 0.
+2021/07/13-15:11:58.661926 7f213fde8700 (Original Log Time 2021/07/13-15:11:58.661915) [/db_impl/db_impl_compaction_flush.cc:2568] Calling FlushMemTableToOutputFile with column family [default], flush slots available 1, compaction slots available 1, flush slots scheduled 1, compaction slots scheduled 0
+2021/07/13-15:11:58.661928 7f213fde8700 [/flush_job.cc:341] [default] [JOB 9] Flushing memtable with next log file: 29
+2021/07/13-15:11:58.661939 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156718661936, "job": 9, "event": "flush_started", "num_memtables": 1, "num_entries": 119113, "num_deletes": 0, "total_data_size": 64201907, "memory_usage": 66850008, "flush_reason": "Write Buffer Full"}
+2021/07/13-15:11:58.661940 7f213fde8700 [/flush_job.cc:370] [default] [JOB 9] Level-0 flush table #30: started
+2021/07/13-15:11:58.900963 7f213fde8700 [/blob/blob_file_builder.cc:308] [default] [JOB 9] Generated blob file #31: 118982 total blobs, 66629920 total bytes
+2021/07/13-15:11:58.901285 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156718901270, "cf_name": "default", "job": 9, "event": "table_file_creation", "file_number": 30, "file_size": 1963501, "file_checksum": "", "file_checksum_func_name": "Unknown", "table_properties": {"data_size": 1951077, "index_size": 16215, "index_partitions": 0, "top_level_index_size": 0, "index_key_is_user_key": 1, "index_value_is_delta_encoded": 1, "filter_size": 0, "raw_key_size": 2855568, "raw_average_key_size": 24, "raw_value_size": 1067062, "raw_average_value_size": 8, "num_data_blocks": 889, "num_entries": 118982, "num_filter_entries": 0, "num_deletions": 0, "num_merge_operands": 0, "num_range_deletions": 0, "format_version": 0, "fixed_key_len": 0, "filter_policy": "", "column_family_name": "default", "column_family_id": 0, "comparator": "leveldb.BytewiseComparator", "merge_operator": "nullptr", "prefix_extractor_name": "nullptr", "property_collectors": "[]", "compression": "Snappy", "compression_options": "window_bits=-14; level=32767; strategy=0; max_dict_bytes=0; zstd_max_train_bytes=0; enabled=0; max_dict_buffer_bytes=0; ", "creation_time": 1626156718, "oldest_key_time": 1626156718, "file_creation_time": 1626156718, "slow_compression_estimated_data_size": 0, "fast_compression_estimated_data_size": 0, "db_id": "da0da3e1-6330-4ded-a8f3-500e4938af5e", "db_session_id": "07CPONV3V6VBSGYHQHT6"}, "oldest_blob_file_number": 31}
+2021/07/13-15:11:58.901298 7f213fde8700 [/flush_job.cc:449] [default] [JOB 9] Level-0 flush table #30: 1963501 bytes OK
+2021/07/13-15:11:58.905885 7f213fde8700 (Original Log Time 2021/07/13-15:11:58.903517) [/memtable_list.cc:457] [default] Level-0 commit table #30 (+1 blob files) started
+2021/07/13-15:11:58.905887 7f213fde8700 (Original Log Time 2021/07/13-15:11:58.905835) [/memtable_list.cc:639] [default] Level-0 commit table #30 (+1 blob files): memtable #1 done
+2021/07/13-15:11:58.905887 7f213fde8700 (Original Log Time 2021/07/13-15:11:58.905846) EVENT_LOG_v1 {"time_micros": 1626156718905842, "job": 9, "event": "flush_finished", "output_compression": "Snappy", "lsm_state": [8, 0, 0, 0, 0, 0, 0], "blob_file_head": 10, "blob_file_tail": 31, "immutable_memtables": 0}
+2021/07/13-15:11:58.905888 7f213fde8700 (Original Log Time 2021/07/13-15:11:58.905855) [/db_impl/db_impl_compaction_flush.cc:241] [default] Level summary: files[8 0 0 0 0 0 0] max score 0.06
+2021/07/13-15:11:58.905889 7f213fde8700 (Original Log Time 2021/07/13-15:11:58.905855) [/db_impl/db_impl_compaction_flush.cc:249] [default] Blob file summary: head=10, tail=31
+2021/07/13-15:11:58.905914 7f213fde8700 [/db_impl/db_impl_files.cc:422] [JOB 9] Try to delete WAL files size 64797472, prev total WAL file size 103559104, number of live WAL files 2.
+2021/07/13-15:11:58.910398 7f213fde8700 [le/delete_scheduler.cc:77] Deleted file ../mnt/000026.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2021/07/13-15:11:58.910402 7f213fde8700 [DEBUG] [/db_impl/db_impl_files.cc:337] [JOB 9] Delete ../mnt/000026.log type=0 #26 -- OK
+2021/07/13-15:11:59.078568 7f212e7fc700 [/db_impl/db_impl_write.cc:1810] [default] New memtable created with log file: #32. Immutable memtables: 0.
+2021/07/13-15:11:59.078631 7f213fde8700 (Original Log Time 2021/07/13-15:11:59.078621) [/db_impl/db_impl_compaction_flush.cc:2568] Calling FlushMemTableToOutputFile with column family [default], flush slots available 1, compaction slots available 1, flush slots scheduled 1, compaction slots scheduled 0
+2021/07/13-15:11:59.078633 7f213fde8700 [/flush_job.cc:341] [default] [JOB 10] Flushing memtable with next log file: 32
+2021/07/13-15:11:59.078643 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156719078640, "job": 10, "event": "flush_started", "num_memtables": 1, "num_entries": 119110, "num_deletes": 0, "total_data_size": 64200290, "memory_usage": 66850064, "flush_reason": "Write Buffer Full"}
+2021/07/13-15:11:59.078645 7f213fde8700 [/flush_job.cc:370] [default] [JOB 10] Level-0 flush table #33: started
+2021/07/13-15:11:59.318190 7f213fde8700 [/blob/blob_file_builder.cc:308] [default] [JOB 10] Generated blob file #34: 118951 total blobs, 66612560 total bytes
+2021/07/13-15:11:59.318508 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156719318494, "cf_name": "default", "job": 10, "event": "table_file_creation", "file_number": 33, "file_size": 1963229, "file_checksum": "", "file_checksum_func_name": "Unknown", "table_properties": {"data_size": 1950800, "index_size": 16219, "index_partitions": 0, "top_level_index_size": 0, "index_key_is_user_key": 1, "index_value_is_delta_encoded": 1, "filter_size": 0, "raw_key_size": 2854824, "raw_average_key_size": 24, "raw_value_size": 1066783, "raw_average_value_size": 8, "num_data_blocks": 889, "num_entries": 118951, "num_filter_entries": 0, "num_deletions": 0, "num_merge_operands": 0, "num_range_deletions": 0, "format_version": 0, "fixed_key_len": 0, "filter_policy": "", "column_family_name": "default", "column_family_id": 0, "comparator": "leveldb.BytewiseComparator", "merge_operator": "nullptr", "prefix_extractor_name": "nullptr", "property_collectors": "[]", "compression": "Snappy", "compression_options": "window_bits=-14; level=32767; strategy=0; max_dict_bytes=0; zstd_max_train_bytes=0; enabled=0; max_dict_buffer_bytes=0; ", "creation_time": 1626156718, "oldest_key_time": 1626156718, "file_creation_time": 1626156719, "slow_compression_estimated_data_size": 0, "fast_compression_estimated_data_size": 0, "db_id": "da0da3e1-6330-4ded-a8f3-500e4938af5e", "db_session_id": "07CPONV3V6VBSGYHQHT6"}, "oldest_blob_file_number": 34}
+2021/07/13-15:11:59.318521 7f213fde8700 [/flush_job.cc:449] [default] [JOB 10] Level-0 flush table #33: 1963229 bytes OK
+2021/07/13-15:11:59.323188 7f213fde8700 (Original Log Time 2021/07/13-15:11:59.320778) [/memtable_list.cc:457] [default] Level-0 commit table #33 (+1 blob files) started
+2021/07/13-15:11:59.323190 7f213fde8700 (Original Log Time 2021/07/13-15:11:59.323144) [/memtable_list.cc:639] [default] Level-0 commit table #33 (+1 blob files): memtable #1 done
+2021/07/13-15:11:59.323206 7f213fde8700 (Original Log Time 2021/07/13-15:11:59.323154) EVENT_LOG_v1 {"time_micros": 1626156719323150, "job": 10, "event": "flush_finished", "output_compression": "Snappy", "lsm_state": [9, 0, 0, 0, 0, 0, 0], "blob_file_head": 10, "blob_file_tail": 34, "immutable_memtables": 0}
+2021/07/13-15:11:59.323207 7f213fde8700 (Original Log Time 2021/07/13-15:11:59.323162) [/db_impl/db_impl_compaction_flush.cc:241] [default] Level summary: files[9 0 0 0 0 0 0] max score 0.07
+2021/07/13-15:11:59.323208 7f213fde8700 (Original Log Time 2021/07/13-15:11:59.323163) [/db_impl/db_impl_compaction_flush.cc:249] [default] Blob file summary: head=10, tail=34
+2021/07/13-15:11:59.323211 7f213fde8700 [/db_impl/db_impl_files.cc:422] [JOB 10] Try to delete WAL files size 64795840, prev total WAL file size 102849728, number of live WAL files 2.
+2021/07/13-15:11:59.327744 7f213fde8700 [le/delete_scheduler.cc:77] Deleted file ../mnt/000029.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2021/07/13-15:11:59.327749 7f213fde8700 [DEBUG] [/db_impl/db_impl_files.cc:337] [JOB 10] Delete ../mnt/000029.log type=0 #29 -- OK
+2021/07/13-15:11:59.500553 7f212e7fc700 [/db_impl/db_impl_write.cc:1810] [default] New memtable created with log file: #35. Immutable memtables: 0.
+2021/07/13-15:11:59.500616 7f213fde8700 (Original Log Time 2021/07/13-15:11:59.500606) [/db_impl/db_impl_compaction_flush.cc:2568] Calling FlushMemTableToOutputFile with column family [default], flush slots available 1, compaction slots available 1, flush slots scheduled 1, compaction slots scheduled 0
+2021/07/13-15:11:59.500618 7f213fde8700 [/flush_job.cc:341] [default] [JOB 11] Flushing memtable with next log file: 35
+2021/07/13-15:11:59.500628 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156719500625, "job": 11, "event": "flush_started", "num_memtables": 1, "num_entries": 119115, "num_deletes": 0, "total_data_size": 64202985, "memory_usage": 66849928, "flush_reason": "Write Buffer Full"}
+2021/07/13-15:11:59.500630 7f213fde8700 [/flush_job.cc:370] [default] [JOB 11] Level-0 flush table #36: started
+2021/07/13-15:11:59.739516 7f213fde8700 [/blob/blob_file_builder.cc:308] [default] [JOB 11] Generated blob file #37: 118951 total blobs, 66612560 total bytes
+2021/07/13-15:11:59.739821 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156719739807, "cf_name": "default", "job": 11, "event": "table_file_creation", "file_number": 36, "file_size": 1962632, "file_checksum": "", "file_checksum_func_name": "Unknown", "table_properties": {"data_size": 1950215, "index_size": 16215, "index_partitions": 0, "top_level_index_size": 0, "index_key_is_user_key": 1, "index_value_is_delta_encoded": 1, "filter_size": 0, "raw_key_size": 2854824, "raw_average_key_size": 24, "raw_value_size": 1066783, "raw_average_value_size": 8, "num_data_blocks": 889, "num_entries": 118951, "num_filter_entries": 0, "num_deletions": 0, "num_merge_operands": 0, "num_range_deletions": 0, "format_version": 0, "fixed_key_len": 0, "filter_policy": "", "column_family_name": "default", "column_family_id": 0, "comparator": "leveldb.BytewiseComparator", "merge_operator": "nullptr", "prefix_extractor_name": "nullptr", "property_collectors": "[]", "compression": "Snappy", "compression_options": "window_bits=-14; level=32767; strategy=0; max_dict_bytes=0; zstd_max_train_bytes=0; enabled=0; max_dict_buffer_bytes=0; ", "creation_time": 1626156719, "oldest_key_time": 1626156719, "file_creation_time": 1626156719, "slow_compression_estimated_data_size": 0, "fast_compression_estimated_data_size": 0, "db_id": "da0da3e1-6330-4ded-a8f3-500e4938af5e", "db_session_id": "07CPONV3V6VBSGYHQHT6"}, "oldest_blob_file_number": 37}
+2021/07/13-15:11:59.739834 7f213fde8700 [/flush_job.cc:449] [default] [JOB 11] Level-0 flush table #36: 1962632 bytes OK
+2021/07/13-15:11:59.744238 7f213fde8700 (Original Log Time 2021/07/13-15:11:59.741918) [/memtable_list.cc:457] [default] Level-0 commit table #36 (+1 blob files) started
+2021/07/13-15:11:59.744240 7f213fde8700 (Original Log Time 2021/07/13-15:11:59.744178) [/memtable_list.cc:639] [default] Level-0 commit table #36 (+1 blob files): memtable #1 done
+2021/07/13-15:11:59.744241 7f213fde8700 (Original Log Time 2021/07/13-15:11:59.744189) EVENT_LOG_v1 {"time_micros": 1626156719744185, "job": 11, "event": "flush_finished", "output_compression": "Snappy", "lsm_state": [10, 0, 0, 0, 0, 0, 0], "blob_file_head": 10, "blob_file_tail": 37, "immutable_memtables": 0}
+2021/07/13-15:11:59.744242 7f213fde8700 (Original Log Time 2021/07/13-15:11:59.744197) [/db_impl/db_impl_compaction_flush.cc:241] [default] Level summary: files[10 0 0 0 0 0 0] max score 0.07
+2021/07/13-15:11:59.744243 7f213fde8700 (Original Log Time 2021/07/13-15:11:59.744198) [/db_impl/db_impl_compaction_flush.cc:249] [default] Blob file summary: head=10, tail=37
+2021/07/13-15:11:59.744247 7f213fde8700 [/db_impl/db_impl_files.cc:422] [JOB 11] Try to delete WAL files size 64798560, prev total WAL file size 104924544, number of live WAL files 2.
+2021/07/13-15:11:59.748752 7f213fde8700 [le/delete_scheduler.cc:77] Deleted file ../mnt/000032.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2021/07/13-15:11:59.748756 7f213fde8700 [DEBUG] [/db_impl/db_impl_files.cc:337] [JOB 11] Delete ../mnt/000032.log type=0 #32 -- OK
+2021/07/13-15:11:59.907325 7f212e7fc700 [/db_impl/db_impl_write.cc:1810] [default] New memtable created with log file: #38. Immutable memtables: 0.
+2021/07/13-15:11:59.907387 7f213fde8700 (Original Log Time 2021/07/13-15:11:59.907377) [/db_impl/db_impl_compaction_flush.cc:2568] Calling FlushMemTableToOutputFile with column family [default], flush slots available 1, compaction slots available 1, flush slots scheduled 1, compaction slots scheduled 0
+2021/07/13-15:11:59.907389 7f213fde8700 [/flush_job.cc:341] [default] [JOB 12] Flushing memtable with next log file: 38
+2021/07/13-15:11:59.907400 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156719907397, "job": 12, "event": "flush_started", "num_memtables": 1, "num_entries": 119124, "num_deletes": 0, "total_data_size": 64207836, "memory_usage": 66850392, "flush_reason": "Write Buffer Full"}
+2021/07/13-15:11:59.907402 7f213fde8700 [/flush_job.cc:370] [default] [JOB 12] Level-0 flush table #39: started
+2021/07/13-15:12:00.145770 7f213fde8700 [/blob/blob_file_builder.cc:308] [default] [JOB 12] Generated blob file #40: 118982 total blobs, 66629920 total bytes
+2021/07/13-15:12:00.146144 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156720146129, "cf_name": "default", "job": 12, "event": "table_file_creation", "file_number": 39, "file_size": 1962268, "file_checksum": "", "file_checksum_func_name": "Unknown", "table_properties": {"data_size": 1949903, "index_size": 16209, "index_partitions": 0, "top_level_index_size": 0, "index_key_is_user_key": 1, "index_value_is_delta_encoded": 1, "filter_size": 0, "raw_key_size": 2855568, "raw_average_key_size": 24, "raw_value_size": 1067062, "raw_average_value_size": 8, "num_data_blocks": 889, "num_entries": 118982, "num_filter_entries": 0, "num_deletions": 0, "num_merge_operands": 0, "num_range_deletions": 0, "format_version": 0, "fixed_key_len": 0, "filter_policy": "", "column_family_name": "default", "column_family_id": 0, "comparator": "leveldb.BytewiseComparator", "merge_operator": "nullptr", "prefix_extractor_name": "nullptr", "property_collectors": "[]", "compression": "Snappy", "compression_options": "window_bits=-14; level=32767; strategy=0; max_dict_bytes=0; zstd_max_train_bytes=0; enabled=0; max_dict_buffer_bytes=0; ", "creation_time": 1626156719, "oldest_key_time": 1626156719, "file_creation_time": 1626156719, "slow_compression_estimated_data_size": 0, "fast_compression_estimated_data_size": 0, "db_id": "da0da3e1-6330-4ded-a8f3-500e4938af5e", "db_session_id": "07CPONV3V6VBSGYHQHT6"}, "oldest_blob_file_number": 40}
+2021/07/13-15:12:00.146157 7f213fde8700 [/flush_job.cc:449] [default] [JOB 12] Level-0 flush table #39: 1962268 bytes OK
+2021/07/13-15:12:00.150792 7f213fde8700 (Original Log Time 2021/07/13-15:12:00.148390) [/memtable_list.cc:457] [default] Level-0 commit table #39 (+1 blob files) started
+2021/07/13-15:12:00.150794 7f213fde8700 (Original Log Time 2021/07/13-15:12:00.150758) [/memtable_list.cc:639] [default] Level-0 commit table #39 (+1 blob files): memtable #1 done
+2021/07/13-15:12:00.150795 7f213fde8700 (Original Log Time 2021/07/13-15:12:00.150769) EVENT_LOG_v1 {"time_micros": 1626156720150765, "job": 12, "event": "flush_finished", "output_compression": "Snappy", "lsm_state": [11, 0, 0, 0, 0, 0, 0], "blob_file_head": 10, "blob_file_tail": 40, "immutable_memtables": 0}
+2021/07/13-15:12:00.150796 7f213fde8700 (Original Log Time 2021/07/13-15:12:00.150779) [/db_impl/db_impl_compaction_flush.cc:241] [default] Level summary: files[11 0 0 0 0 0 0] max score 0.08
+2021/07/13-15:12:00.150797 7f213fde8700 (Original Log Time 2021/07/13-15:12:00.150779) [/db_impl/db_impl_compaction_flush.cc:249] [default] Blob file summary: head=10, tail=40
+2021/07/13-15:12:00.150800 7f213fde8700 [/db_impl/db_impl_files.cc:422] [JOB 12] Try to delete WAL files size 64803456, prev total WAL file size 104788000, number of live WAL files 2.
+2021/07/13-15:12:00.155322 7f213fde8700 [le/delete_scheduler.cc:77] Deleted file ../mnt/000035.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2021/07/13-15:12:00.155326 7f213fde8700 [DEBUG] [/db_impl/db_impl_files.cc:337] [JOB 12] Delete ../mnt/000035.log type=0 #35 -- OK
+2021/07/13-15:12:00.312567 7f212e7fc700 [/db_impl/db_impl_write.cc:1810] [default] New memtable created with log file: #41. Immutable memtables: 0.
+2021/07/13-15:12:00.312630 7f213fde8700 (Original Log Time 2021/07/13-15:12:00.312620) [/db_impl/db_impl_compaction_flush.cc:2568] Calling FlushMemTableToOutputFile with column family [default], flush slots available 1, compaction slots available 1, flush slots scheduled 1, compaction slots scheduled 0
+2021/07/13-15:12:00.312632 7f213fde8700 [/flush_job.cc:341] [default] [JOB 13] Flushing memtable with next log file: 41
+2021/07/13-15:12:00.312642 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156720312639, "job": 13, "event": "flush_started", "num_memtables": 1, "num_entries": 119118, "num_deletes": 0, "total_data_size": 64204602, "memory_usage": 66849960, "flush_reason": "Write Buffer Full"}
+2021/07/13-15:12:00.312643 7f213fde8700 [/flush_job.cc:370] [default] [JOB 13] Level-0 flush table #42: started
+2021/07/13-15:12:00.551159 7f213fde8700 [/blob/blob_file_builder.cc:308] [default] [JOB 13] Generated blob file #43: 118984 total blobs, 66631040 total bytes
+2021/07/13-15:12:00.551474 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156720551460, "cf_name": "default", "job": 13, "event": "table_file_creation", "file_number": 42, "file_size": 1964548, "file_checksum": "", "file_checksum_func_name": "Unknown", "table_properties": {"data_size": 1952220, "index_size": 16183, "index_partitions": 0, "top_level_index_size": 0, "index_key_is_user_key": 1, "index_value_is_delta_encoded": 1, "filter_size": 0, "raw_key_size": 2855616, "raw_average_key_size": 24, "raw_value_size": 1067080, "raw_average_value_size": 8, "num_data_blocks": 889, "num_entries": 118984, "num_filter_entries": 0, "num_deletions": 0, "num_merge_operands": 0, "num_range_deletions": 0, "format_version": 0, "fixed_key_len": 0, "filter_policy": "", "column_family_name": "default", "column_family_id": 0, "comparator": "leveldb.BytewiseComparator", "merge_operator": "nullptr", "prefix_extractor_name": "nullptr", "property_collectors": "[]", "compression": "Snappy", "compression_options": "window_bits=-14; level=32767; strategy=0; max_dict_bytes=0; zstd_max_train_bytes=0; enabled=0; max_dict_buffer_bytes=0; ", "creation_time": 1626156719, "oldest_key_time": 1626156719, "file_creation_time": 1626156720, "slow_compression_estimated_data_size": 0, "fast_compression_estimated_data_size": 0, "db_id": "da0da3e1-6330-4ded-a8f3-500e4938af5e", "db_session_id": "07CPONV3V6VBSGYHQHT6"}, "oldest_blob_file_number": 43}
+2021/07/13-15:12:00.551486 7f213fde8700 [/flush_job.cc:449] [default] [JOB 13] Level-0 flush table #42: 1964548 bytes OK
+2021/07/13-15:12:00.555755 7f213fde8700 (Original Log Time 2021/07/13-15:12:00.553642) [/memtable_list.cc:457] [default] Level-0 commit table #42 (+1 blob files) started
+2021/07/13-15:12:00.555757 7f213fde8700 (Original Log Time 2021/07/13-15:12:00.555724) [/memtable_list.cc:639] [default] Level-0 commit table #42 (+1 blob files): memtable #1 done
+2021/07/13-15:12:00.555771 7f213fde8700 (Original Log Time 2021/07/13-15:12:00.555734) EVENT_LOG_v1 {"time_micros": 1626156720555730, "job": 13, "event": "flush_finished", "output_compression": "Snappy", "lsm_state": [12, 0, 0, 0, 0, 0, 0], "blob_file_head": 10, "blob_file_tail": 43, "immutable_memtables": 0}
+2021/07/13-15:12:00.555772 7f213fde8700 (Original Log Time 2021/07/13-15:12:00.555743) [/db_impl/db_impl_compaction_flush.cc:241] [default] Level summary: files[12 0 0 0 0 0 0] max score 0.09
+2021/07/13-15:12:00.555773 7f213fde8700 (Original Log Time 2021/07/13-15:12:00.555743) [/db_impl/db_impl_compaction_flush.cc:249] [default] Blob file summary: head=10, tail=43
+2021/07/13-15:12:00.555776 7f213fde8700 [/db_impl/db_impl_files.cc:422] [JOB 13] Try to delete WAL files size 64800192, prev total WAL file size 103766912, number of live WAL files 2.
+2021/07/13-15:12:00.560378 7f213fde8700 [le/delete_scheduler.cc:77] Deleted file ../mnt/000038.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2021/07/13-15:12:00.560381 7f213fde8700 [DEBUG] [/db_impl/db_impl_files.cc:337] [JOB 13] Delete ../mnt/000038.log type=0 #38 -- OK
+2021/07/13-15:12:00.727889 7f212e7fc700 [/db_impl/db_impl_write.cc:1810] [default] New memtable created with log file: #44. Immutable memtables: 0.
+2021/07/13-15:12:00.727952 7f213fde8700 (Original Log Time 2021/07/13-15:12:00.727942) [/db_impl/db_impl_compaction_flush.cc:2568] Calling FlushMemTableToOutputFile with column family [default], flush slots available 1, compaction slots available 1, flush slots scheduled 1, compaction slots scheduled 0
+2021/07/13-15:12:00.727954 7f213fde8700 [/flush_job.cc:341] [default] [JOB 14] Flushing memtable with next log file: 44
+2021/07/13-15:12:00.727979 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156720727976, "job": 14, "event": "flush_started", "num_memtables": 1, "num_entries": 119114, "num_deletes": 0, "total_data_size": 64202446, "memory_usage": 66850312, "flush_reason": "Write Buffer Full"}
+2021/07/13-15:12:00.727980 7f213fde8700 [/flush_job.cc:370] [default] [JOB 14] Level-0 flush table #45: started
+2021/07/13-15:12:00.963334 7f213fde8700 [/blob/blob_file_builder.cc:308] [default] [JOB 14] Generated blob file #46: 118977 total blobs, 66627120 total bytes
+2021/07/13-15:12:00.963636 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156720963621, "cf_name": "default", "job": 14, "event": "table_file_creation", "file_number": 45, "file_size": 1962729, "file_checksum": "", "file_checksum_func_name": "Unknown", "table_properties": {"data_size": 1950338, "index_size": 16202, "index_partitions": 0, "top_level_index_size": 0, "index_key_is_user_key": 1, "index_value_is_delta_encoded": 1, "filter_size": 0, "raw_key_size": 2855448, "raw_average_key_size": 24, "raw_value_size": 1067017, "raw_average_value_size": 8, "num_data_blocks": 889, "num_entries": 118977, "num_filter_entries": 0, "num_deletions": 0, "num_merge_operands": 0, "num_range_deletions": 0, "format_version": 0, "fixed_key_len": 0, "filter_policy": "", "column_family_name": "default", "column_family_id": 0, "comparator": "leveldb.BytewiseComparator", "merge_operator": "nullptr", "prefix_extractor_name": "nullptr", "property_collectors": "[]", "compression": "Snappy", "compression_options": "window_bits=-14; level=32767; strategy=0; max_dict_bytes=0; zstd_max_train_bytes=0; enabled=0; max_dict_buffer_bytes=0; ", "creation_time": 1626156720, "oldest_key_time": 1626156720, "file_creation_time": 1626156720, "slow_compression_estimated_data_size": 0, "fast_compression_estimated_data_size": 0, "db_id": "da0da3e1-6330-4ded-a8f3-500e4938af5e", "db_session_id": "07CPONV3V6VBSGYHQHT6"}, "oldest_blob_file_number": 46}
+2021/07/13-15:12:00.963650 7f213fde8700 [/flush_job.cc:449] [default] [JOB 14] Level-0 flush table #45: 1962729 bytes OK
+2021/07/13-15:12:00.967245 7f213fde8700 (Original Log Time 2021/07/13-15:12:00.965414) [/memtable_list.cc:457] [default] Level-0 commit table #45 (+1 blob files) started
+2021/07/13-15:12:00.967247 7f213fde8700 (Original Log Time 2021/07/13-15:12:00.967211) [/memtable_list.cc:639] [default] Level-0 commit table #45 (+1 blob files): memtable #1 done
+2021/07/13-15:12:00.967248 7f213fde8700 (Original Log Time 2021/07/13-15:12:00.967222) EVENT_LOG_v1 {"time_micros": 1626156720967218, "job": 14, "event": "flush_finished", "output_compression": "Snappy", "lsm_state": [13, 0, 0, 0, 0, 0, 0], "blob_file_head": 10, "blob_file_tail": 46, "immutable_memtables": 0}
+2021/07/13-15:12:00.967249 7f213fde8700 (Original Log Time 2021/07/13-15:12:00.967231) [/db_impl/db_impl_compaction_flush.cc:241] [default] Level summary: files[13 0 0 0 0 0 0] max score 0.10
+2021/07/13-15:12:00.967250 7f213fde8700 (Original Log Time 2021/07/13-15:12:00.967231) [/db_impl/db_impl_compaction_flush.cc:249] [default] Blob file summary: head=10, tail=46
+2021/07/13-15:12:00.967253 7f213fde8700 [/db_impl/db_impl_files.cc:422] [JOB 14] Try to delete WAL files size 64798016, prev total WAL file size 103728288, number of live WAL files 2.
+2021/07/13-15:12:00.971852 7f213fde8700 [le/delete_scheduler.cc:77] Deleted file ../mnt/000041.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2021/07/13-15:12:00.971856 7f213fde8700 [DEBUG] [/db_impl/db_impl_files.cc:337] [JOB 14] Delete ../mnt/000041.log type=0 #41 -- OK
+2021/07/13-15:12:01.143236 7f212e7fc700 [/db_impl/db_impl_write.cc:1810] [default] New memtable created with log file: #47. Immutable memtables: 0.
+2021/07/13-15:12:01.143303 7f213fde8700 (Original Log Time 2021/07/13-15:12:01.143292) [/db_impl/db_impl_compaction_flush.cc:2568] Calling FlushMemTableToOutputFile with column family [default], flush slots available 1, compaction slots available 1, flush slots scheduled 1, compaction slots scheduled 0
+2021/07/13-15:12:01.143305 7f213fde8700 [/flush_job.cc:341] [default] [JOB 15] Flushing memtable with next log file: 47
+2021/07/13-15:12:01.143316 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156721143313, "job": 15, "event": "flush_started", "num_memtables": 1, "num_entries": 119108, "num_deletes": 0, "total_data_size": 64199212, "memory_usage": 66850168, "flush_reason": "Write Buffer Full"}
+2021/07/13-15:12:01.143318 7f213fde8700 [/flush_job.cc:370] [default] [JOB 15] Level-0 flush table #48: started
+2021/07/13-15:12:01.380168 7f213fde8700 [/blob/blob_file_builder.cc:308] [default] [JOB 15] Generated blob file #49: 118979 total blobs, 66628240 total bytes
+2021/07/13-15:12:01.380452 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156721380438, "cf_name": "default", "job": 15, "event": "table_file_creation", "file_number": 48, "file_size": 1965588, "file_checksum": "", "file_checksum_func_name": "Unknown", "table_properties": {"data_size": 1953223, "index_size": 16199, "index_partitions": 0, "top_level_index_size": 0, "index_key_is_user_key": 1, "index_value_is_delta_encoded": 1, "filter_size": 0, "raw_key_size": 2855496, "raw_average_key_size": 24, "raw_value_size": 1067035, "raw_average_value_size": 8, "num_data_blocks": 889, "num_entries": 118979, "num_filter_entries": 0, "num_deletions": 0, "num_merge_operands": 0, "num_range_deletions": 0, "format_version": 0, "fixed_key_len": 0, "filter_policy": "", "column_family_name": "default", "column_family_id": 0, "comparator": "leveldb.BytewiseComparator", "merge_operator": "nullptr", "prefix_extractor_name": "nullptr", "property_collectors": "[]", "compression": "Snappy", "compression_options": "window_bits=-14; level=32767; strategy=0; max_dict_bytes=0; zstd_max_train_bytes=0; enabled=0; max_dict_buffer_bytes=0; ", "creation_time": 1626156720, "oldest_key_time": 1626156720, "file_creation_time": 1626156721, "slow_compression_estimated_data_size": 0, "fast_compression_estimated_data_size": 0, "db_id": "da0da3e1-6330-4ded-a8f3-500e4938af5e", "db_session_id": "07CPONV3V6VBSGYHQHT6"}, "oldest_blob_file_number": 49}
+2021/07/13-15:12:01.380465 7f213fde8700 [/flush_job.cc:449] [default] [JOB 15] Level-0 flush table #48: 1965588 bytes OK
+2021/07/13-15:12:01.384585 7f213fde8700 (Original Log Time 2021/07/13-15:12:01.382459) [/memtable_list.cc:457] [default] Level-0 commit table #48 (+1 blob files) started
+2021/07/13-15:12:01.384587 7f213fde8700 (Original Log Time 2021/07/13-15:12:01.384552) [/memtable_list.cc:639] [default] Level-0 commit table #48 (+1 blob files): memtable #1 done
+2021/07/13-15:12:01.384588 7f213fde8700 (Original Log Time 2021/07/13-15:12:01.384563) EVENT_LOG_v1 {"time_micros": 1626156721384559, "job": 15, "event": "flush_finished", "output_compression": "Snappy", "lsm_state": [14, 0, 0, 0, 0, 0, 0], "blob_file_head": 10, "blob_file_tail": 49, "immutable_memtables": 0}
+2021/07/13-15:12:01.384589 7f213fde8700 (Original Log Time 2021/07/13-15:12:01.384572) [/db_impl/db_impl_compaction_flush.cc:241] [default] Level summary: files[14 0 0 0 0 0 0] max score 0.10
+2021/07/13-15:12:01.384590 7f213fde8700 (Original Log Time 2021/07/13-15:12:01.384572) [/db_impl/db_impl_compaction_flush.cc:249] [default] Blob file summary: head=10, tail=49
+2021/07/13-15:12:01.384594 7f213fde8700 [/db_impl/db_impl_files.cc:422] [JOB 15] Try to delete WAL files size 64794752, prev total WAL file size 103711424, number of live WAL files 2.
+2021/07/13-15:12:01.389201 7f213fde8700 [le/delete_scheduler.cc:77] Deleted file ../mnt/000044.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2021/07/13-15:12:01.389205 7f213fde8700 [DEBUG] [/db_impl/db_impl_files.cc:337] [JOB 15] Delete ../mnt/000044.log type=0 #44 -- OK
+2021/07/13-15:12:01.554967 7f212e7fc700 [/db_impl/db_impl_write.cc:1810] [default] New memtable created with log file: #50. Immutable memtables: 0.
+2021/07/13-15:12:01.555035 7f213fde8700 (Original Log Time 2021/07/13-15:12:01.555024) [/db_impl/db_impl_compaction_flush.cc:2568] Calling FlushMemTableToOutputFile with column family [default], flush slots available 1, compaction slots available 1, flush slots scheduled 1, compaction slots scheduled 0
+2021/07/13-15:12:01.555037 7f213fde8700 [/flush_job.cc:341] [default] [JOB 16] Flushing memtable with next log file: 50
+2021/07/13-15:12:01.555047 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156721555044, "job": 16, "event": "flush_started", "num_memtables": 1, "num_entries": 119109, "num_deletes": 0, "total_data_size": 64199751, "memory_usage": 66850352, "flush_reason": "Write Buffer Full"}
+2021/07/13-15:12:01.555049 7f213fde8700 [/flush_job.cc:370] [default] [JOB 16] Level-0 flush table #51: started
+2021/07/13-15:12:01.791409 7f213fde8700 [/blob/blob_file_builder.cc:308] [default] [JOB 16] Generated blob file #52: 118965 total blobs, 66620400 total bytes
+2021/07/13-15:12:01.791723 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156721791708, "cf_name": "default", "job": 16, "event": "table_file_creation", "file_number": 51, "file_size": 1962834, "file_checksum": "", "file_checksum_func_name": "Unknown", "table_properties": {"data_size": 1950432, "index_size": 16223, "index_partitions": 0, "top_level_index_size": 0, "index_key_is_user_key": 1, "index_value_is_delta_encoded": 1, "filter_size": 0, "raw_key_size": 2855160, "raw_average_key_size": 24, "raw_value_size": 1066909, "raw_average_value_size": 8, "num_data_blocks": 889, "num_entries": 118965, "num_filter_entries": 0, "num_deletions": 0, "num_merge_operands": 0, "num_range_deletions": 0, "format_version": 0, "fixed_key_len": 0, "filter_policy": "", "column_family_name": "default", "column_family_id": 0, "comparator": "leveldb.BytewiseComparator", "merge_operator": "nullptr", "prefix_extractor_name": "nullptr", "property_collectors": "[]", "compression": "Snappy", "compression_options": "window_bits=-14; level=32767; strategy=0; max_dict_bytes=0; zstd_max_train_bytes=0; enabled=0; max_dict_buffer_bytes=0; ", "creation_time": 1626156721, "oldest_key_time": 1626156721, "file_creation_time": 1626156721, "slow_compression_estimated_data_size": 0, "fast_compression_estimated_data_size": 0, "db_id": "da0da3e1-6330-4ded-a8f3-500e4938af5e", "db_session_id": "07CPONV3V6VBSGYHQHT6"}, "oldest_blob_file_number": 52}
+2021/07/13-15:12:01.791736 7f213fde8700 [/flush_job.cc:449] [default] [JOB 16] Level-0 flush table #51: 1962834 bytes OK
+2021/07/13-15:12:01.796233 7f213fde8700 (Original Log Time 2021/07/13-15:12:01.793852) [/memtable_list.cc:457] [default] Level-0 commit table #51 (+1 blob files) started
+2021/07/13-15:12:01.796235 7f213fde8700 (Original Log Time 2021/07/13-15:12:01.796201) [/memtable_list.cc:639] [default] Level-0 commit table #51 (+1 blob files): memtable #1 done
+2021/07/13-15:12:01.796236 7f213fde8700 (Original Log Time 2021/07/13-15:12:01.796211) EVENT_LOG_v1 {"time_micros": 1626156721796207, "job": 16, "event": "flush_finished", "output_compression": "Snappy", "lsm_state": [15, 0, 0, 0, 0, 0, 0], "blob_file_head": 10, "blob_file_tail": 52, "immutable_memtables": 0}
+2021/07/13-15:12:01.796237 7f213fde8700 (Original Log Time 2021/07/13-15:12:01.796221) [/db_impl/db_impl_compaction_flush.cc:241] [default] Level summary: files[15 0 0 0 0 0 0] max score 0.11
+2021/07/13-15:12:01.796238 7f213fde8700 (Original Log Time 2021/07/13-15:12:01.796221) [/db_impl/db_impl_compaction_flush.cc:249] [default] Blob file summary: head=10, tail=52
+2021/07/13-15:12:01.796242 7f213fde8700 [/db_impl/db_impl_files.cc:422] [JOB 16] Try to delete WAL files size 64795296, prev total WAL file size 104351712, number of live WAL files 2.
+2021/07/13-15:12:01.800833 7f213fde8700 [le/delete_scheduler.cc:77] Deleted file ../mnt/000047.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2021/07/13-15:12:01.800837 7f213fde8700 [DEBUG] [/db_impl/db_impl_files.cc:337] [JOB 16] Delete ../mnt/000047.log type=0 #47 -- OK
+2021/07/13-15:12:01.961826 7f212e7fc700 [/db_impl/db_impl_write.cc:1810] [default] New memtable created with log file: #53. Immutable memtables: 0.
+2021/07/13-15:12:01.961911 7f213fde8700 (Original Log Time 2021/07/13-15:12:01.961901) [/db_impl/db_impl_compaction_flush.cc:2568] Calling FlushMemTableToOutputFile with column family [default], flush slots available 1, compaction slots available 1, flush slots scheduled 1, compaction slots scheduled 0
+2021/07/13-15:12:01.961914 7f213fde8700 [/flush_job.cc:341] [default] [JOB 17] Flushing memtable with next log file: 53
+2021/07/13-15:12:01.961925 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156721961922, "job": 17, "event": "flush_started", "num_memtables": 1, "num_entries": 119114, "num_deletes": 0, "total_data_size": 64202446, "memory_usage": 66850128, "flush_reason": "Write Buffer Full"}
+2021/07/13-15:12:01.961926 7f213fde8700 [/flush_job.cc:370] [default] [JOB 17] Level-0 flush table #54: started
+2021/07/13-15:12:02.198597 7f213fde8700 [/blob/blob_file_builder.cc:308] [default] [JOB 17] Generated blob file #55: 118979 total blobs, 66628240 total bytes
+2021/07/13-15:12:02.198811 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156722198796, "cf_name": "default", "job": 17, "event": "table_file_creation", "file_number": 54, "file_size": 1964641, "file_checksum": "", "file_checksum_func_name": "Unknown", "table_properties": {"data_size": 1952249, "index_size": 16204, "index_partitions": 0, "top_level_index_size": 0, "index_key_is_user_key": 1, "index_value_is_delta_encoded": 1, "filter_size": 0, "raw_key_size": 2855496, "raw_average_key_size": 24, "raw_value_size": 1067035, "raw_average_value_size": 8, "num_data_blocks": 889, "num_entries": 118979, "num_filter_entries": 0, "num_deletions": 0, "num_merge_operands": 0, "num_range_deletions": 0, "format_version": 0, "fixed_key_len": 0, "filter_policy": "", "column_family_name": "default", "column_family_id": 0, "comparator": "leveldb.BytewiseComparator", "merge_operator": "nullptr", "prefix_extractor_name": "nullptr", "property_collectors": "[]", "compression": "Snappy", "compression_options": "window_bits=-14; level=32767; strategy=0; max_dict_bytes=0; zstd_max_train_bytes=0; enabled=0; max_dict_buffer_bytes=0; ", "creation_time": 1626156721, "oldest_key_time": 1626156721, "file_creation_time": 1626156721, "slow_compression_estimated_data_size": 0, "fast_compression_estimated_data_size": 0, "db_id": "da0da3e1-6330-4ded-a8f3-500e4938af5e", "db_session_id": "07CPONV3V6VBSGYHQHT6"}, "oldest_blob_file_number": 55}
+2021/07/13-15:12:02.198824 7f213fde8700 [/flush_job.cc:449] [default] [JOB 17] Level-0 flush table #54: 1964641 bytes OK
+2021/07/13-15:12:02.203581 7f213fde8700 (Original Log Time 2021/07/13-15:12:02.201280) [/memtable_list.cc:457] [default] Level-0 commit table #54 (+1 blob files) started
+2021/07/13-15:12:02.203583 7f213fde8700 (Original Log Time 2021/07/13-15:12:02.203547) [/memtable_list.cc:639] [default] Level-0 commit table #54 (+1 blob files): memtable #1 done
+2021/07/13-15:12:02.203584 7f213fde8700 (Original Log Time 2021/07/13-15:12:02.203558) EVENT_LOG_v1 {"time_micros": 1626156722203554, "job": 17, "event": "flush_finished", "output_compression": "Snappy", "lsm_state": [16, 0, 0, 0, 0, 0, 0], "blob_file_head": 10, "blob_file_tail": 55, "immutable_memtables": 0}
+2021/07/13-15:12:02.203585 7f213fde8700 (Original Log Time 2021/07/13-15:12:02.203567) [/db_impl/db_impl_compaction_flush.cc:241] [default] Level summary: files[16 0 0 0 0 0 0] max score 0.12
+2021/07/13-15:12:02.203586 7f213fde8700 (Original Log Time 2021/07/13-15:12:02.203567) [/db_impl/db_impl_compaction_flush.cc:249] [default] Blob file summary: head=10, tail=55
+2021/07/13-15:12:02.203590 7f213fde8700 [/db_impl/db_impl_files.cc:422] [JOB 17] Try to delete WAL files size 64798016, prev total WAL file size 104322336, number of live WAL files 2.
+2021/07/13-15:12:02.208243 7f213fde8700 [le/delete_scheduler.cc:77] Deleted file ../mnt/000050.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2021/07/13-15:12:02.208247 7f213fde8700 [DEBUG] [/db_impl/db_impl_files.cc:337] [JOB 17] Delete ../mnt/000050.log type=0 #50 -- OK
+2021/07/13-15:12:02.370434 7f212e7fc700 [/db_impl/db_impl_write.cc:1810] [default] New memtable created with log file: #56. Immutable memtables: 0.
+2021/07/13-15:12:02.370500 7f213fde8700 (Original Log Time 2021/07/13-15:12:02.370490) [/db_impl/db_impl_compaction_flush.cc:2568] Calling FlushMemTableToOutputFile with column family [default], flush slots available 1, compaction slots available 1, flush slots scheduled 1, compaction slots scheduled 0
+2021/07/13-15:12:02.370503 7f213fde8700 [/flush_job.cc:341] [default] [JOB 18] Flushing memtable with next log file: 56
+2021/07/13-15:12:02.370513 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156722370510, "job": 18, "event": "flush_started", "num_memtables": 1, "num_entries": 119115, "num_deletes": 0, "total_data_size": 64202985, "memory_usage": 66850136, "flush_reason": "Write Buffer Full"}
+2021/07/13-15:12:02.370515 7f213fde8700 [/flush_job.cc:370] [default] [JOB 18] Level-0 flush table #57: started
+2021/07/13-15:12:02.606153 7f213fde8700 [/blob/blob_file_builder.cc:308] [default] [JOB 18] Generated blob file #58: 118957 total blobs, 66615920 total bytes
+2021/07/13-15:12:02.606464 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156722606449, "cf_name": "default", "job": 18, "event": "table_file_creation", "file_number": 57, "file_size": 1962818, "file_checksum": "", "file_checksum_func_name": "Unknown", "table_properties": {"data_size": 1950398, "index_size": 16225, "index_partitions": 0, "top_level_index_size": 0, "index_key_is_user_key": 1, "index_value_is_delta_encoded": 1, "filter_size": 0, "raw_key_size": 2854968, "raw_average_key_size": 24, "raw_value_size": 1066837, "raw_average_value_size": 8, "num_data_blocks": 889, "num_entries": 118957, "num_filter_entries": 0, "num_deletions": 0, "num_merge_operands": 0, "num_range_deletions": 0, "format_version": 0, "fixed_key_len": 0, "filter_policy": "", "column_family_name": "default", "column_family_id": 0, "comparator": "leveldb.BytewiseComparator", "merge_operator": "nullptr", "prefix_extractor_name": "nullptr", "property_collectors": "[]", "compression": "Snappy", "compression_options": "window_bits=-14; level=32767; strategy=0; max_dict_bytes=0; zstd_max_train_bytes=0; enabled=0; max_dict_buffer_bytes=0; ", "creation_time": 1626156721, "oldest_key_time": 1626156721, "file_creation_time": 1626156722, "slow_compression_estimated_data_size": 0, "fast_compression_estimated_data_size": 0, "db_id": "da0da3e1-6330-4ded-a8f3-500e4938af5e", "db_session_id": "07CPONV3V6VBSGYHQHT6"}, "oldest_blob_file_number": 58}
+2021/07/13-15:12:02.606478 7f213fde8700 [/flush_job.cc:449] [default] [JOB 18] Level-0 flush table #57: 1962818 bytes OK
+2021/07/13-15:12:02.610659 7f213fde8700 (Original Log Time 2021/07/13-15:12:02.608590) [/memtable_list.cc:457] [default] Level-0 commit table #57 (+1 blob files) started
+2021/07/13-15:12:02.610660 7f213fde8700 (Original Log Time 2021/07/13-15:12:02.610624) [/memtable_list.cc:639] [default] Level-0 commit table #57 (+1 blob files): memtable #1 done
+2021/07/13-15:12:02.610661 7f213fde8700 (Original Log Time 2021/07/13-15:12:02.610635) EVENT_LOG_v1 {"time_micros": 1626156722610632, "job": 18, "event": "flush_finished", "output_compression": "Snappy", "lsm_state": [17, 0, 0, 0, 0, 0, 0], "blob_file_head": 10, "blob_file_tail": 58, "immutable_memtables": 0}
+2021/07/13-15:12:02.610662 7f213fde8700 (Original Log Time 2021/07/13-15:12:02.610645) [/db_impl/db_impl_compaction_flush.cc:241] [default] Level summary: files[17 0 0 0 0 0 0] max score 0.12
+2021/07/13-15:12:02.610663 7f213fde8700 (Original Log Time 2021/07/13-15:12:02.610645) [/db_impl/db_impl_compaction_flush.cc:249] [default] Blob file summary: head=10, tail=58
+2021/07/13-15:12:02.610668 7f213fde8700 [/db_impl/db_impl_files.cc:422] [JOB 18] Try to delete WAL files size 64798560, prev total WAL file size 102700672, number of live WAL files 2.
+2021/07/13-15:12:02.615279 7f213fde8700 [le/delete_scheduler.cc:77] Deleted file ../mnt/000053.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2021/07/13-15:12:02.615283 7f213fde8700 [DEBUG] [/db_impl/db_impl_files.cc:337] [JOB 18] Delete ../mnt/000053.log type=0 #53 -- OK
+2021/07/13-15:12:02.788894 7f212e7fc700 [/db_impl/db_impl_write.cc:1810] [default] New memtable created with log file: #59. Immutable memtables: 0.
+2021/07/13-15:12:02.788961 7f213fde8700 (Original Log Time 2021/07/13-15:12:02.788951) [/db_impl/db_impl_compaction_flush.cc:2568] Calling FlushMemTableToOutputFile with column family [default], flush slots available 1, compaction slots available 1, flush slots scheduled 1, compaction slots scheduled 0
+2021/07/13-15:12:02.788964 7f213fde8700 [/flush_job.cc:341] [default] [JOB 19] Flushing memtable with next log file: 59
+2021/07/13-15:12:02.788974 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156722788971, "job": 19, "event": "flush_started", "num_memtables": 1, "num_entries": 119116, "num_deletes": 0, "total_data_size": 64203524, "memory_usage": 66850216, "flush_reason": "Write Buffer Full"}
+2021/07/13-15:12:02.788976 7f213fde8700 [/flush_job.cc:370] [default] [JOB 19] Level-0 flush table #60: started
+2021/07/13-15:12:03.026875 7f213fde8700 [/blob/blob_file_builder.cc:308] [default] [JOB 19] Generated blob file #61: 118971 total blobs, 66623760 total bytes
+2021/07/13-15:12:03.027162 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156723027147, "cf_name": "default", "job": 19, "event": "table_file_creation", "file_number": 60, "file_size": 1963586, "file_checksum": "", "file_checksum_func_name": "Unknown", "table_properties": {"data_size": 1951152, "index_size": 16229, "index_partitions": 0, "top_level_index_size": 0, "index_key_is_user_key": 1, "index_value_is_delta_encoded": 1, "filter_size": 0, "raw_key_size": 2855304, "raw_average_key_size": 24, "raw_value_size": 1066963, "raw_average_value_size": 8, "num_data_blocks": 889, "num_entries": 118971, "num_filter_entries": 0, "num_deletions": 0, "num_merge_operands": 0, "num_range_deletions": 0, "format_version": 0, "fixed_key_len": 0, "filter_policy": "", "column_family_name": "default", "column_family_id": 0, "comparator": "leveldb.BytewiseComparator", "merge_operator": "nullptr", "prefix_extractor_name": "nullptr", "property_collectors": "[]", "compression": "Snappy", "compression_options": "window_bits=-14; level=32767; strategy=0; max_dict_bytes=0; zstd_max_train_bytes=0; enabled=0; max_dict_buffer_bytes=0; ", "creation_time": 1626156722, "oldest_key_time": 1626156722, "file_creation_time": 1626156722, "slow_compression_estimated_data_size": 0, "fast_compression_estimated_data_size": 0, "db_id": "da0da3e1-6330-4ded-a8f3-500e4938af5e", "db_session_id": "07CPONV3V6VBSGYHQHT6"}, "oldest_blob_file_number": 61}
+2021/07/13-15:12:03.027175 7f213fde8700 [/flush_job.cc:449] [default] [JOB 19] Level-0 flush table #60: 1963586 bytes OK
+2021/07/13-15:12:03.031570 7f213fde8700 (Original Log Time 2021/07/13-15:12:03.029295) [/memtable_list.cc:457] [default] Level-0 commit table #60 (+1 blob files) started
+2021/07/13-15:12:03.031571 7f213fde8700 (Original Log Time 2021/07/13-15:12:03.031535) [/memtable_list.cc:639] [default] Level-0 commit table #60 (+1 blob files): memtable #1 done
+2021/07/13-15:12:03.031573 7f213fde8700 (Original Log Time 2021/07/13-15:12:03.031545) EVENT_LOG_v1 {"time_micros": 1626156723031542, "job": 19, "event": "flush_finished", "output_compression": "Snappy", "lsm_state": [18, 0, 0, 0, 0, 0, 0], "blob_file_head": 10, "blob_file_tail": 61, "immutable_memtables": 0}
+2021/07/13-15:12:03.031574 7f213fde8700 (Original Log Time 2021/07/13-15:12:03.031555) [/db_impl/db_impl_compaction_flush.cc:241] [default] Level summary: files[18 0 0 0 0 0 0] max score 0.13
+2021/07/13-15:12:03.031575 7f213fde8700 (Original Log Time 2021/07/13-15:12:03.031556) [/db_impl/db_impl_compaction_flush.cc:249] [default] Blob file summary: head=10, tail=61
+2021/07/13-15:12:03.031579 7f213fde8700 [/db_impl/db_impl_files.cc:422] [JOB 19] Try to delete WAL files size 64799104, prev total WAL file size 103326816, number of live WAL files 2.
+2021/07/13-15:12:03.036341 7f213fde8700 [le/delete_scheduler.cc:77] Deleted file ../mnt/000056.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2021/07/13-15:12:03.036345 7f213fde8700 [DEBUG] [/db_impl/db_impl_files.cc:337] [JOB 19] Delete ../mnt/000056.log type=0 #56 -- OK
+2021/07/13-15:12:03.206979 7f212e7fc700 [/db_impl/db_impl_write.cc:1810] [default] New memtable created with log file: #62. Immutable memtables: 0.
+2021/07/13-15:12:03.207045 7f213fde8700 (Original Log Time 2021/07/13-15:12:03.207034) [/db_impl/db_impl_compaction_flush.cc:2568] Calling FlushMemTableToOutputFile with column family [default], flush slots available 1, compaction slots available 1, flush slots scheduled 1, compaction slots scheduled 0
+2021/07/13-15:12:03.207047 7f213fde8700 [/flush_job.cc:341] [default] [JOB 20] Flushing memtable with next log file: 62
+2021/07/13-15:12:03.207058 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156723207055, "job": 20, "event": "flush_started", "num_memtables": 1, "num_entries": 119116, "num_deletes": 0, "total_data_size": 64203524, "memory_usage": 66849992, "flush_reason": "Write Buffer Full"}
+2021/07/13-15:12:03.207059 7f213fde8700 [/flush_job.cc:370] [default] [JOB 20] Level-0 flush table #63: started
+2021/07/13-15:12:03.443491 7f213fde8700 [/blob/blob_file_builder.cc:308] [default] [JOB 20] Generated blob file #64: 118981 total blobs, 66629360 total bytes
+2021/07/13-15:12:03.443788 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156723443773, "cf_name": "default", "job": 20, "event": "table_file_creation", "file_number": 63, "file_size": 1962017, "file_checksum": "", "file_checksum_func_name": "Unknown", "table_properties": {"data_size": 1949594, "index_size": 16215, "index_partitions": 0, "top_level_index_size": 0, "index_key_is_user_key": 1, "index_value_is_delta_encoded": 1, "filter_size": 0, "raw_key_size": 2855544, "raw_average_key_size": 24, "raw_value_size": 1067053, "raw_average_value_size": 8, "num_data_blocks": 889, "num_entries": 118981, "num_filter_entries": 0, "num_deletions": 0, "num_merge_operands": 0, "num_range_deletions": 0, "format_version": 0, "fixed_key_len": 0, "filter_policy": "", "column_family_name": "default", "column_family_id": 0, "comparator": "leveldb.BytewiseComparator", "merge_operator": "nullptr", "prefix_extractor_name": "nullptr", "property_collectors": "[]", "compression": "Snappy", "compression_options": "window_bits=-14; level=32767; strategy=0; max_dict_bytes=0; zstd_max_train_bytes=0; enabled=0; max_dict_buffer_bytes=0; ", "creation_time": 1626156722, "oldest_key_time": 1626156722, "file_creation_time": 1626156723, "slow_compression_estimated_data_size": 0, "fast_compression_estimated_data_size": 0, "db_id": "da0da3e1-6330-4ded-a8f3-500e4938af5e", "db_session_id": "07CPONV3V6VBSGYHQHT6"}, "oldest_blob_file_number": 64}
+2021/07/13-15:12:03.443801 7f213fde8700 [/flush_job.cc:449] [default] [JOB 20] Level-0 flush table #63: 1962017 bytes OK
+2021/07/13-15:12:03.448122 7f213fde8700 (Original Log Time 2021/07/13-15:12:03.445892) [/memtable_list.cc:457] [default] Level-0 commit table #63 (+1 blob files) started
+2021/07/13-15:12:03.448123 7f213fde8700 (Original Log Time 2021/07/13-15:12:03.448088) [/memtable_list.cc:639] [default] Level-0 commit table #63 (+1 blob files): memtable #1 done
+2021/07/13-15:12:03.448124 7f213fde8700 (Original Log Time 2021/07/13-15:12:03.448099) EVENT_LOG_v1 {"time_micros": 1626156723448095, "job": 20, "event": "flush_finished", "output_compression": "Snappy", "lsm_state": [19, 0, 0, 0, 0, 0, 0], "blob_file_head": 10, "blob_file_tail": 64, "immutable_memtables": 0}
+2021/07/13-15:12:03.448125 7f213fde8700 (Original Log Time 2021/07/13-15:12:03.448109) [/db_impl/db_impl_compaction_flush.cc:241] [default] Level summary: files[19 0 0 0 0 0 0] max score 0.14
+2021/07/13-15:12:03.448126 7f213fde8700 (Original Log Time 2021/07/13-15:12:03.448110) [/db_impl/db_impl_compaction_flush.cc:249] [default] Blob file summary: head=10, tail=64
+2021/07/13-15:12:03.448131 7f213fde8700 [/db_impl/db_impl_files.cc:422] [JOB 20] Try to delete WAL files size 64799104, prev total WAL file size 103877344, number of live WAL files 2.
+2021/07/13-15:12:03.452739 7f213fde8700 [le/delete_scheduler.cc:77] Deleted file ../mnt/000059.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2021/07/13-15:12:03.452743 7f213fde8700 [DEBUG] [/db_impl/db_impl_files.cc:337] [JOB 20] Delete ../mnt/000059.log type=0 #59 -- OK
+2021/07/13-15:12:03.617693 7f212e7fc700 [/db_impl/db_impl_write.cc:1810] [default] New memtable created with log file: #65. Immutable memtables: 0.
+2021/07/13-15:12:03.617760 7f213fde8700 (Original Log Time 2021/07/13-15:12:03.617749) [/db_impl/db_impl_compaction_flush.cc:2568] Calling FlushMemTableToOutputFile with column family [default], flush slots available 1, compaction slots available 1, flush slots scheduled 1, compaction slots scheduled 0
+2021/07/13-15:12:03.617762 7f213fde8700 [/flush_job.cc:341] [default] [JOB 21] Flushing memtable with next log file: 65
+2021/07/13-15:12:03.617773 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156723617770, "job": 21, "event": "flush_started", "num_memtables": 1, "num_entries": 119113, "num_deletes": 0, "total_data_size": 64201907, "memory_usage": 66850264, "flush_reason": "Write Buffer Full"}
+2021/07/13-15:12:03.617774 7f213fde8700 [/flush_job.cc:370] [default] [JOB 21] Level-0 flush table #66: started
+2021/07/13-15:12:03.861141 7f213fde8700 [/blob/blob_file_builder.cc:308] [default] [JOB 21] Generated blob file #67: 118992 total blobs, 66635520 total bytes
+2021/07/13-15:12:03.861438 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156723861423, "cf_name": "default", "job": 21, "event": "table_file_creation", "file_number": 66, "file_size": 1962920, "file_checksum": "", "file_checksum_func_name": "Unknown", "table_properties": {"data_size": 1950554, "index_size": 16200, "index_partitions": 0, "top_level_index_size": 0, "index_key_is_user_key": 1, "index_value_is_delta_encoded": 1, "filter_size": 0, "raw_key_size": 2855808, "raw_average_key_size": 24, "raw_value_size": 1067152, "raw_average_value_size": 8, "num_data_blocks": 889, "num_entries": 118992, "num_filter_entries": 0, "num_deletions": 0, "num_merge_operands": 0, "num_range_deletions": 0, "format_version": 0, "fixed_key_len": 0, "filter_policy": "", "column_family_name": "default", "column_family_id": 0, "comparator": "leveldb.BytewiseComparator", "merge_operator": "nullptr", "prefix_extractor_name": "nullptr", "property_collectors": "[]", "compression": "Snappy", "compression_options": "window_bits=-14; level=32767; strategy=0; max_dict_bytes=0; zstd_max_train_bytes=0; enabled=0; max_dict_buffer_bytes=0; ", "creation_time": 1626156723, "oldest_key_time": 1626156723, "file_creation_time": 1626156723, "slow_compression_estimated_data_size": 0, "fast_compression_estimated_data_size": 0, "db_id": "da0da3e1-6330-4ded-a8f3-500e4938af5e", "db_session_id": "07CPONV3V6VBSGYHQHT6"}, "oldest_blob_file_number": 67}
+2021/07/13-15:12:03.861451 7f213fde8700 [/flush_job.cc:449] [default] [JOB 21] Level-0 flush table #66: 1962920 bytes OK
+2021/07/13-15:12:03.865806 7f213fde8700 [WARN] [/column_family.cc:960] [default] Stalling writes because we have 20 level-0 files rate 8388608
+2021/07/13-15:12:03.865845 7f213fde8700 (Original Log Time 2021/07/13-15:12:03.863591) [/memtable_list.cc:457] [default] Level-0 commit table #66 (+1 blob files) started
+2021/07/13-15:12:03.865846 7f213fde8700 (Original Log Time 2021/07/13-15:12:03.865792) [/memtable_list.cc:639] [default] Level-0 commit table #66 (+1 blob files): memtable #1 done
+2021/07/13-15:12:03.865847 7f213fde8700 (Original Log Time 2021/07/13-15:12:03.865803) EVENT_LOG_v1 {"time_micros": 1626156723865800, "job": 21, "event": "flush_finished", "output_compression": "Snappy", "lsm_state": [20, 0, 0, 0, 0, 0, 0], "blob_file_head": 10, "blob_file_tail": 67, "immutable_memtables": 0}
+2021/07/13-15:12:03.865848 7f213fde8700 (Original Log Time 2021/07/13-15:12:03.865819) [/db_impl/db_impl_compaction_flush.cc:241] [default] Level summary: files[20 0 0 0 0 0 0] max score 0.15
+2021/07/13-15:12:03.865849 7f213fde8700 (Original Log Time 2021/07/13-15:12:03.865820) [/db_impl/db_impl_compaction_flush.cc:249] [default] Blob file summary: head=10, tail=67
+2021/07/13-15:12:03.865853 7f213fde8700 [/db_impl/db_impl_files.cc:422] [JOB 21] Try to delete WAL files size 64797472, prev total WAL file size 104689536, number of live WAL files 2.
+2021/07/13-15:12:03.870528 7f213fde8700 [le/delete_scheduler.cc:77] Deleted file ../mnt/000062.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2021/07/13-15:12:03.870532 7f213fde8700 [DEBUG] [/db_impl/db_impl_files.cc:337] [JOB 21] Delete ../mnt/000062.log type=0 #62 -- OK
+2021/07/13-15:12:06.833907 7f212e7fc700 [/db_impl/db_impl_write.cc:1810] [default] New memtable created with log file: #68. Immutable memtables: 0.
+2021/07/13-15:12:06.833944 7f212e7fc700 [WARN] [/column_family.cc:960] [default] Stalling writes because we have 20 level-0 files rate 6710886
+2021/07/13-15:12:06.834130 7f213fde8700 (Original Log Time 2021/07/13-15:12:06.834084) [/db_impl/db_impl_compaction_flush.cc:2568] Calling FlushMemTableToOutputFile with column family [default], flush slots available 1, compaction slots available 1, flush slots scheduled 1, compaction slots scheduled 0
+2021/07/13-15:12:06.834141 7f213fde8700 [/flush_job.cc:341] [default] [JOB 22] Flushing memtable with next log file: 68
+2021/07/13-15:12:06.834178 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156726834165, "job": 22, "event": "flush_started", "num_memtables": 1, "num_entries": 119115, "num_deletes": 0, "total_data_size": 64202985, "memory_usage": 66850168, "flush_reason": "Write Buffer Full"}
+2021/07/13-15:12:06.834185 7f213fde8700 [/flush_job.cc:370] [default] [JOB 22] Level-0 flush table #69: started
+2021/07/13-15:12:07.092937 7f213fde8700 [/blob/blob_file_builder.cc:308] [default] [JOB 22] Generated blob file #70: 118970 total blobs, 66623200 total bytes
+2021/07/13-15:12:07.093249 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156727093232, "cf_name": "default", "job": 22, "event": "table_file_creation", "file_number": 69, "file_size": 1962698, "file_checksum": "", "file_checksum_func_name": "Unknown", "table_properties": {"data_size": 1950287, "index_size": 16225, "index_partitions": 0, "top_level_index_size": 0, "index_key_is_user_key": 1, "index_value_is_delta_encoded": 1, "filter_size": 0, "raw_key_size": 2855280, "raw_average_key_size": 24, "raw_value_size": 1066954, "raw_average_value_size": 8, "num_data_blocks": 889, "num_entries": 118970, "num_filter_entries": 0, "num_deletions": 0, "num_merge_operands": 0, "num_range_deletions": 0, "format_version": 0, "fixed_key_len": 0, "filter_policy": "", "column_family_name": "default", "column_family_id": 0, "comparator": "leveldb.BytewiseComparator", "merge_operator": "nullptr", "prefix_extractor_name": "nullptr", "property_collectors": "[]", "compression": "Snappy", "compression_options": "window_bits=-14; level=32767; strategy=0; max_dict_bytes=0; zstd_max_train_bytes=0; enabled=0; max_dict_buffer_bytes=0; ", "creation_time": 1626156723, "oldest_key_time": 1626156723, "file_creation_time": 1626156726, "slow_compression_estimated_data_size": 0, "fast_compression_estimated_data_size": 0, "db_id": "da0da3e1-6330-4ded-a8f3-500e4938af5e", "db_session_id": "07CPONV3V6VBSGYHQHT6"}, "oldest_blob_file_number": 70}
+2021/07/13-15:12:07.093260 7f213fde8700 [/flush_job.cc:449] [default] [JOB 22] Level-0 flush table #69: 1962698 bytes OK
+2021/07/13-15:12:07.097705 7f213fde8700 [WARN] [/column_family.cc:960] [default] Stalling writes because we have 21 level-0 files rate 5368708
+2021/07/13-15:12:07.097729 7f213fde8700 (Original Log Time 2021/07/13-15:12:07.095541) [/memtable_list.cc:457] [default] Level-0 commit table #69 (+1 blob files) started
+2021/07/13-15:12:07.097731 7f213fde8700 (Original Log Time 2021/07/13-15:12:07.097690) [/memtable_list.cc:639] [default] Level-0 commit table #69 (+1 blob files): memtable #1 done
+2021/07/13-15:12:07.097732 7f213fde8700 (Original Log Time 2021/07/13-15:12:07.097702) EVENT_LOG_v1 {"time_micros": 1626156727097697, "job": 22, "event": "flush_finished", "output_compression": "Snappy", "lsm_state": [21, 0, 0, 0, 0, 0, 0], "blob_file_head": 10, "blob_file_tail": 70, "immutable_memtables": 0}
+2021/07/13-15:12:07.097733 7f213fde8700 (Original Log Time 2021/07/13-15:12:07.097719) [/db_impl/db_impl_compaction_flush.cc:241] [default] Level summary: files[21 0 0 0 0 0 0] max score 0.15
+2021/07/13-15:12:07.097735 7f213fde8700 (Original Log Time 2021/07/13-15:12:07.097719) [/db_impl/db_impl_compaction_flush.cc:249] [default] Blob file summary: head=10, tail=70
+2021/07/13-15:12:07.097740 7f213fde8700 [/db_impl/db_impl_files.cc:422] [JOB 22] Try to delete WAL files size 64798560, prev total WAL file size 66576352, number of live WAL files 2.
+2021/07/13-15:12:07.103137 7f213fde8700 [le/delete_scheduler.cc:77] Deleted file ../mnt/000065.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2021/07/13-15:12:07.103141 7f213fde8700 [DEBUG] [/db_impl/db_impl_files.cc:337] [JOB 22] Delete ../mnt/000065.log type=0 #65 -- OK
+2021/07/13-15:12:18.830353 7f212e7fc700 [/db_impl/db_impl_write.cc:1810] [default] New memtable created with log file: #71. Immutable memtables: 0.
+2021/07/13-15:12:18.830409 7f212e7fc700 [WARN] [/column_family.cc:960] [default] Stalling writes because we have 21 level-0 files rate 4294966
+2021/07/13-15:12:18.830538 7f213fde8700 (Original Log Time 2021/07/13-15:12:18.830490) [/db_impl/db_impl_compaction_flush.cc:2568] Calling FlushMemTableToOutputFile with column family [default], flush slots available 1, compaction slots available 1, flush slots scheduled 1, compaction slots scheduled 0
+2021/07/13-15:12:18.830552 7f213fde8700 [/flush_job.cc:341] [default] [JOB 23] Flushing memtable with next log file: 71
+2021/07/13-15:12:18.830600 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156738830583, "job": 23, "event": "flush_started", "num_memtables": 1, "num_entries": 119118, "num_deletes": 0, "total_data_size": 64204602, "memory_usage": 66850296, "flush_reason": "Write Buffer Full"}
+2021/07/13-15:12:18.830609 7f213fde8700 [/flush_job.cc:370] [default] [JOB 23] Level-0 flush table #72: started
+2021/07/13-15:12:19.158254 7f213fde8700 [/blob/blob_file_builder.cc:308] [default] [JOB 23] Generated blob file #73: 118977 total blobs, 66627120 total bytes
+2021/07/13-15:12:19.158563 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156739158539, "cf_name": "default", "job": 23, "event": "table_file_creation", "file_number": 72, "file_size": 1963933, "file_checksum": "", "file_checksum_func_name": "Unknown", "table_properties": {"data_size": 1951510, "index_size": 16227, "index_partitions": 0, "top_level_index_size": 0, "index_key_is_user_key": 1, "index_value_is_delta_encoded": 1, "filter_size": 0, "raw_key_size": 2855448, "raw_average_key_size": 24, "raw_value_size": 1067017, "raw_average_value_size": 8, "num_data_blocks": 889, "num_entries": 118977, "num_filter_entries": 0, "num_deletions": 0, "num_merge_operands": 0, "num_range_deletions": 0, "format_version": 0, "fixed_key_len": 0, "filter_policy": "", "column_family_name": "default", "column_family_id": 0, "comparator": "leveldb.BytewiseComparator", "merge_operator": "nullptr", "prefix_extractor_name": "nullptr", "property_collectors": "[]", "compression": "Snappy", "compression_options": "window_bits=-14; level=32767; strategy=0; max_dict_bytes=0; zstd_max_train_bytes=0; enabled=0; max_dict_buffer_bytes=0; ", "creation_time": 1626156726, "oldest_key_time": 1626156726, "file_creation_time": 1626156738, "slow_compression_estimated_data_size": 0, "fast_compression_estimated_data_size": 0, "db_id": "da0da3e1-6330-4ded-a8f3-500e4938af5e", "db_session_id": "07CPONV3V6VBSGYHQHT6"}, "oldest_blob_file_number": 73}
+2021/07/13-15:12:19.158579 7f213fde8700 [/flush_job.cc:449] [default] [JOB 23] Level-0 flush table #72: 1963933 bytes OK
+2021/07/13-15:12:19.163294 7f213fde8700 [WARN] [/column_family.cc:960] [default] Stalling writes because we have 22 level-0 files rate 3435972
+2021/07/13-15:12:19.163337 7f213fde8700 (Original Log Time 2021/07/13-15:12:19.160847) [/memtable_list.cc:457] [default] Level-0 commit table #72 (+1 blob files) started
+2021/07/13-15:12:19.163340 7f213fde8700 (Original Log Time 2021/07/13-15:12:19.163272) [/memtable_list.cc:639] [default] Level-0 commit table #72 (+1 blob files): memtable #1 done
+2021/07/13-15:12:19.163343 7f213fde8700 (Original Log Time 2021/07/13-15:12:19.163290) EVENT_LOG_v1 {"time_micros": 1626156739163284, "job": 23, "event": "flush_finished", "output_compression": "Snappy", "lsm_state": [22, 0, 0, 0, 0, 0, 0], "blob_file_head": 10, "blob_file_tail": 73, "immutable_memtables": 0}
+2021/07/13-15:12:19.163345 7f213fde8700 (Original Log Time 2021/07/13-15:12:19.163313) [/db_impl/db_impl_compaction_flush.cc:241] [default] Level summary: files[22 0 0 0 0 0 0] max score 0.16
+2021/07/13-15:12:19.163348 7f213fde8700 (Original Log Time 2021/07/13-15:12:19.163314) [/db_impl/db_impl_compaction_flush.cc:249] [default] Blob file summary: head=10, tail=73
+2021/07/13-15:12:19.163359 7f213fde8700 [/db_impl/db_impl_files.cc:422] [JOB 23] Try to delete WAL files size 64800192, prev total WAL file size 66233088, number of live WAL files 2.
+2021/07/13-15:12:19.171132 7f213fde8700 [le/delete_scheduler.cc:77] Deleted file ../mnt/000068.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2021/07/13-15:12:19.171139 7f213fde8700 [DEBUG] [/db_impl/db_impl_files.cc:337] [JOB 23] Delete ../mnt/000068.log type=0 #68 -- OK
+2021/07/13-15:12:37.594348 7f212e7fc700 [/db_impl/db_impl_write.cc:1810] [default] New memtable created with log file: #74. Immutable memtables: 0.
+2021/07/13-15:12:37.594402 7f212e7fc700 [WARN] [/column_family.cc:960] [default] Stalling writes because we have 22 level-0 files rate 2748777
+2021/07/13-15:12:37.594563 7f213fde8700 (Original Log Time 2021/07/13-15:12:37.594516) [/db_impl/db_impl_compaction_flush.cc:2568] Calling FlushMemTableToOutputFile with column family [default], flush slots available 1, compaction slots available 1, flush slots scheduled 1, compaction slots scheduled 0
+2021/07/13-15:12:37.594574 7f213fde8700 [/flush_job.cc:341] [default] [JOB 24] Flushing memtable with next log file: 74
+2021/07/13-15:12:37.594612 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156757594599, "job": 24, "event": "flush_started", "num_memtables": 1, "num_entries": 119113, "num_deletes": 0, "total_data_size": 64201907, "memory_usage": 66849944, "flush_reason": "Write Buffer Full"}
+2021/07/13-15:12:37.594619 7f213fde8700 [/flush_job.cc:370] [default] [JOB 24] Level-0 flush table #75: started
+2021/07/13-15:12:37.866310 7f213fde8700 [/blob/blob_file_builder.cc:308] [default] [JOB 24] Generated blob file #76: 118971 total blobs, 66623760 total bytes
+2021/07/13-15:12:37.866609 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156757866590, "cf_name": "default", "job": 24, "event": "table_file_creation", "file_number": 75, "file_size": 1964085, "file_checksum": "", "file_checksum_func_name": "Unknown", "table_properties": {"data_size": 1951676, "index_size": 16219, "index_partitions": 0, "top_level_index_size": 0, "index_key_is_user_key": 1, "index_value_is_delta_encoded": 1, "filter_size": 0, "raw_key_size": 2855304, "raw_average_key_size": 24, "raw_value_size": 1066963, "raw_average_value_size": 8, "num_data_blocks": 889, "num_entries": 118971, "num_filter_entries": 0, "num_deletions": 0, "num_merge_operands": 0, "num_range_deletions": 0, "format_version": 0, "fixed_key_len": 0, "filter_policy": "", "column_family_name": "default", "column_family_id": 0, "comparator": "leveldb.BytewiseComparator", "merge_operator": "nullptr", "prefix_extractor_name": "nullptr", "property_collectors": "[]", "compression": "Snappy", "compression_options": "window_bits=-14; level=32767; strategy=0; max_dict_bytes=0; zstd_max_train_bytes=0; enabled=0; max_dict_buffer_bytes=0; ", "creation_time": 1626156738, "oldest_key_time": 1626156738, "file_creation_time": 1626156757, "slow_compression_estimated_data_size": 0, "fast_compression_estimated_data_size": 0, "db_id": "da0da3e1-6330-4ded-a8f3-500e4938af5e", "db_session_id": "07CPONV3V6VBSGYHQHT6"}, "oldest_blob_file_number": 76}
+2021/07/13-15:12:37.866622 7f213fde8700 [/flush_job.cc:449] [default] [JOB 24] Level-0 flush table #75: 1964085 bytes OK
+2021/07/13-15:12:37.871316 7f213fde8700 [WARN] [/column_family.cc:960] [default] Stalling writes because we have 23 level-0 files rate 2199021
+2021/07/13-15:12:37.871344 7f213fde8700 (Original Log Time 2021/07/13-15:12:37.868966) [/memtable_list.cc:457] [default] Level-0 commit table #75 (+1 blob files) started
+2021/07/13-15:12:37.871346 7f213fde8700 (Original Log Time 2021/07/13-15:12:37.871301) [/memtable_list.cc:639] [default] Level-0 commit table #75 (+1 blob files): memtable #1 done
+2021/07/13-15:12:37.871348 7f213fde8700 (Original Log Time 2021/07/13-15:12:37.871313) EVENT_LOG_v1 {"time_micros": 1626156757871308, "job": 24, "event": "flush_finished", "output_compression": "Snappy", "lsm_state": [23, 0, 0, 0, 0, 0, 0], "blob_file_head": 10, "blob_file_tail": 76, "immutable_memtables": 0}
+2021/07/13-15:12:37.871349 7f213fde8700 (Original Log Time 2021/07/13-15:12:37.871332) [/db_impl/db_impl_compaction_flush.cc:241] [default] Level summary: files[23 0 0 0 0 0 0] max score 0.17
+2021/07/13-15:12:37.871350 7f213fde8700 (Original Log Time 2021/07/13-15:12:37.871332) [/db_impl/db_impl_compaction_flush.cc:249] [default] Blob file summary: head=10, tail=76
+2021/07/13-15:12:37.871356 7f213fde8700 [/db_impl/db_impl_files.cc:422] [JOB 24] Try to delete WAL files size 64797472, prev total WAL file size 65559616, number of live WAL files 2.
+2021/07/13-15:12:37.877531 7f213fde8700 [le/delete_scheduler.cc:77] Deleted file ../mnt/000071.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2021/07/13-15:12:37.877536 7f213fde8700 [DEBUG] [/db_impl/db_impl_files.cc:337] [JOB 24] Delete ../mnt/000071.log type=0 #71 -- OK
+2021/07/13-15:13:06.974439 7f212e7fc700 [/db_impl/db_impl_write.cc:1810] [default] New memtable created with log file: #77. Immutable memtables: 0.
+2021/07/13-15:13:06.974491 7f212e7fc700 [WARN] [/column_family.cc:960] [default] Stalling writes because we have 23 level-0 files rate 1759216
+2021/07/13-15:13:06.974638 7f213fde8700 (Original Log Time 2021/07/13-15:13:06.974596) [/db_impl/db_impl_compaction_flush.cc:2568] Calling FlushMemTableToOutputFile with column family [default], flush slots available 1, compaction slots available 1, flush slots scheduled 1, compaction slots scheduled 0
+2021/07/13-15:13:06.974649 7f213fde8700 [/flush_job.cc:341] [default] [JOB 25] Flushing memtable with next log file: 77
+2021/07/13-15:13:06.974688 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156786974675, "job": 25, "event": "flush_started", "num_memtables": 1, "num_entries": 119116, "num_deletes": 0, "total_data_size": 64203524, "memory_usage": 66849936, "flush_reason": "Write Buffer Full"}
+2021/07/13-15:13:06.974696 7f213fde8700 [/flush_job.cc:370] [default] [JOB 25] Level-0 flush table #78: started
+2021/07/13-15:13:07.240362 7f213fde8700 [/blob/blob_file_builder.cc:308] [default] [JOB 25] Generated blob file #79: 118989 total blobs, 66633840 total bytes
+2021/07/13-15:13:07.240642 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156787240624, "cf_name": "default", "job": 25, "event": "table_file_creation", "file_number": 78, "file_size": 1964378, "file_checksum": "", "file_checksum_func_name": "Unknown", "table_properties": {"data_size": 1951928, "index_size": 16237, "index_partitions": 0, "top_level_index_size": 0, "index_key_is_user_key": 1, "index_value_is_delta_encoded": 1, "filter_size": 0, "raw_key_size": 2855736, "raw_average_key_size": 24, "raw_value_size": 1067125, "raw_average_value_size": 8, "num_data_blocks": 889, "num_entries": 118989, "num_filter_entries": 0, "num_deletions": 0, "num_merge_operands": 0, "num_range_deletions": 0, "format_version": 0, "fixed_key_len": 0, "filter_policy": "", "column_family_name": "default", "column_family_id": 0, "comparator": "leveldb.BytewiseComparator", "merge_operator": "nullptr", "prefix_extractor_name": "nullptr", "property_collectors": "[]", "compression": "Snappy", "compression_options": "window_bits=-14; level=32767; strategy=0; max_dict_bytes=0; zstd_max_train_bytes=0; enabled=0; max_dict_buffer_bytes=0; ", "creation_time": 1626156757, "oldest_key_time": 1626156757, "file_creation_time": 1626156786, "slow_compression_estimated_data_size": 0, "fast_compression_estimated_data_size": 0, "db_id": "da0da3e1-6330-4ded-a8f3-500e4938af5e", "db_session_id": "07CPONV3V6VBSGYHQHT6"}, "oldest_blob_file_number": 79}
+2021/07/13-15:13:07.240654 7f213fde8700 [/flush_job.cc:449] [default] [JOB 25] Level-0 flush table #78: 1964378 bytes OK
+2021/07/13-15:13:07.245077 7f213fde8700 [WARN] [/column_family.cc:960] [default] Stalling writes because we have 24 level-0 files rate 1407372
+2021/07/13-15:13:07.245103 7f213fde8700 (Original Log Time 2021/07/13-15:13:07.242772) [/memtable_list.cc:457] [default] Level-0 commit table #78 (+1 blob files) started
+2021/07/13-15:13:07.245105 7f213fde8700 (Original Log Time 2021/07/13-15:13:07.245063) [/memtable_list.cc:639] [default] Level-0 commit table #78 (+1 blob files): memtable #1 done
+2021/07/13-15:13:07.245106 7f213fde8700 (Original Log Time 2021/07/13-15:13:07.245074) EVENT_LOG_v1 {"time_micros": 1626156787245070, "job": 25, "event": "flush_finished", "output_compression": "Snappy", "lsm_state": [24, 0, 0, 0, 0, 0, 0], "blob_file_head": 10, "blob_file_tail": 79, "immutable_memtables": 0}
+2021/07/13-15:13:07.245107 7f213fde8700 (Original Log Time 2021/07/13-15:13:07.245091) [/db_impl/db_impl_compaction_flush.cc:241] [default] Level summary: files[24 0 0 0 0 0 0] max score 0.18
+2021/07/13-15:13:07.245109 7f213fde8700 (Original Log Time 2021/07/13-15:13:07.245092) [/db_impl/db_impl_compaction_flush.cc:249] [default] Blob file summary: head=10, tail=79
+2021/07/13-15:13:07.245114 7f213fde8700 [/db_impl/db_impl_files.cc:422] [JOB 25] Try to delete WAL files size 64799104, prev total WAL file size 65274016, number of live WAL files 2.
+2021/07/13-15:13:07.250911 7f213fde8700 [le/delete_scheduler.cc:77] Deleted file ../mnt/000074.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2021/07/13-15:13:07.250916 7f213fde8700 [DEBUG] [/db_impl/db_impl_files.cc:337] [JOB 25] Delete ../mnt/000074.log type=0 #74 -- OK
+2021/07/13-15:13:52.932342 7f212e7fc700 [/db_impl/db_impl_write.cc:1810] [default] New memtable created with log file: #80. Immutable memtables: 0.
+2021/07/13-15:13:52.932376 7f212e7fc700 [WARN] [/column_family.cc:960] [default] Stalling writes because we have 24 level-0 files rate 1125897
+2021/07/13-15:13:52.932551 7f213fde8700 (Original Log Time 2021/07/13-15:13:52.932506) [/db_impl/db_impl_compaction_flush.cc:2568] Calling FlushMemTableToOutputFile with column family [default], flush slots available 1, compaction slots available 1, flush slots scheduled 1, compaction slots scheduled 0
+2021/07/13-15:13:52.932562 7f213fde8700 [/flush_job.cc:341] [default] [JOB 26] Flushing memtable with next log file: 80
+2021/07/13-15:13:52.932599 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156832932587, "job": 26, "event": "flush_started", "num_memtables": 1, "num_entries": 119123, "num_deletes": 0, "total_data_size": 64207297, "memory_usage": 66850400, "flush_reason": "Write Buffer Full"}
+2021/07/13-15:13:52.932606 7f213fde8700 [/flush_job.cc:370] [default] [JOB 26] Level-0 flush table #81: started
+2021/07/13-15:13:53.202742 7f213fde8700 [/blob/blob_file_builder.cc:308] [default] [JOB 26] Generated blob file #82: 118959 total blobs, 66617040 total bytes
+2021/07/13-15:13:53.203144 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156833203120, "cf_name": "default", "job": 26, "event": "table_file_creation", "file_number": 81, "file_size": 1962148, "file_checksum": "", "file_checksum_func_name": "Unknown", "table_properties": {"data_size": 1949748, "index_size": 16211, "index_partitions": 0, "top_level_index_size": 0, "index_key_is_user_key": 1, "index_value_is_delta_encoded": 1, "filter_size": 0, "raw_key_size": 2855016, "raw_average_key_size": 24, "raw_value_size": 1066855, "raw_average_value_size": 8, "num_data_blocks": 889, "num_entries": 118959, "num_filter_entries": 0, "num_deletions": 0, "num_merge_operands": 0, "num_range_deletions": 0, "format_version": 0, "fixed_key_len": 0, "filter_policy": "", "column_family_name": "default", "column_family_id": 0, "comparator": "leveldb.BytewiseComparator", "merge_operator": "nullptr", "prefix_extractor_name": "nullptr", "property_collectors": "[]", "compression": "Snappy", "compression_options": "window_bits=-14; level=32767; strategy=0; max_dict_bytes=0; zstd_max_train_bytes=0; enabled=0; max_dict_buffer_bytes=0; ", "creation_time": 1626156786, "oldest_key_time": 1626156786, "file_creation_time": 1626156832, "slow_compression_estimated_data_size": 0, "fast_compression_estimated_data_size": 0, "db_id": "da0da3e1-6330-4ded-a8f3-500e4938af5e", "db_session_id": "07CPONV3V6VBSGYHQHT6"}, "oldest_blob_file_number": 82}
+2021/07/13-15:13:53.203161 7f213fde8700 [/flush_job.cc:449] [default] [JOB 26] Level-0 flush table #81: 1962148 bytes OK
+2021/07/13-15:13:53.207991 7f213fde8700 [WARN] [/column_family.cc:960] [default] Stalling writes because we have 25 level-0 files rate 900717
+2021/07/13-15:13:53.208030 7f213fde8700 (Original Log Time 2021/07/13-15:13:53.205697) [/memtable_list.cc:457] [default] Level-0 commit table #81 (+1 blob files) started
+2021/07/13-15:13:53.208033 7f213fde8700 (Original Log Time 2021/07/13-15:13:53.207969) [/memtable_list.cc:639] [default] Level-0 commit table #81 (+1 blob files): memtable #1 done
+2021/07/13-15:13:53.208035 7f213fde8700 (Original Log Time 2021/07/13-15:13:53.207987) EVENT_LOG_v1 {"time_micros": 1626156833207980, "job": 26, "event": "flush_finished", "output_compression": "Snappy", "lsm_state": [25, 0, 0, 0, 0, 0, 0], "blob_file_head": 10, "blob_file_tail": 82, "immutable_memtables": 0}
+2021/07/13-15:13:53.208037 7f213fde8700 (Original Log Time 2021/07/13-15:13:53.208013) [/db_impl/db_impl_compaction_flush.cc:241] [default] Level summary: files[25 0 0 0 0 0 0] max score 0.18
+2021/07/13-15:13:53.208038 7f213fde8700 (Original Log Time 2021/07/13-15:13:53.208014) [/db_impl/db_impl_compaction_flush.cc:249] [default] Blob file summary: head=10, tail=82
+2021/07/13-15:13:53.208047 7f213fde8700 [/db_impl/db_impl_files.cc:422] [JOB 26] Try to delete WAL files size 64802912, prev total WAL file size 65115168, number of live WAL files 2.
+2021/07/13-15:13:53.215937 7f213fde8700 [le/delete_scheduler.cc:77] Deleted file ../mnt/000077.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2021/07/13-15:13:53.215943 7f213fde8700 [DEBUG] [/db_impl/db_impl_files.cc:337] [JOB 26] Delete ../mnt/000077.log type=0 #77 -- OK
+2021/07/13-15:15:04.751618 7f212e7fc700 [/db_impl/db_impl_write.cc:1810] [default] New memtable created with log file: #83. Immutable memtables: 0.
+2021/07/13-15:15:04.751655 7f212e7fc700 [WARN] [/column_family.cc:960] [default] Stalling writes because we have 25 level-0 files rate 720573
+2021/07/13-15:15:04.751826 7f213fde8700 (Original Log Time 2021/07/13-15:15:04.751781) [/db_impl/db_impl_compaction_flush.cc:2568] Calling FlushMemTableToOutputFile with column family [default], flush slots available 1, compaction slots available 1, flush slots scheduled 1, compaction slots scheduled 0
+2021/07/13-15:15:04.751837 7f213fde8700 [/flush_job.cc:341] [default] [JOB 27] Flushing memtable with next log file: 83
+2021/07/13-15:15:04.751874 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156904751862, "job": 27, "event": "flush_started", "num_memtables": 1, "num_entries": 119120, "num_deletes": 0, "total_data_size": 64205680, "memory_usage": 66850056, "flush_reason": "Write Buffer Full"}
+2021/07/13-15:15:04.751882 7f213fde8700 [/flush_job.cc:370] [default] [JOB 27] Level-0 flush table #84: started
+2021/07/13-15:15:05.018302 7f213fde8700 [/blob/blob_file_builder.cc:308] [default] [JOB 27] Generated blob file #85: 118996 total blobs, 66637760 total bytes
+2021/07/13-15:15:05.018583 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626156905018566, "cf_name": "default", "job": 27, "event": "table_file_creation", "file_number": 84, "file_size": 1964178, "file_checksum": "", "file_checksum_func_name": "Unknown", "table_properties": {"data_size": 1951773, "index_size": 16208, "index_partitions": 0, "top_level_index_size": 0, "index_key_is_user_key": 1, "index_value_is_delta_encoded": 1, "filter_size": 0, "raw_key_size": 2855904, "raw_average_key_size": 24, "raw_value_size": 1067188, "raw_average_value_size": 8, "num_data_blocks": 889, "num_entries": 118996, "num_filter_entries": 0, "num_deletions": 0, "num_merge_operands": 0, "num_range_deletions": 0, "format_version": 0, "fixed_key_len": 0, "filter_policy": "", "column_family_name": "default", "column_family_id": 0, "comparator": "leveldb.BytewiseComparator", "merge_operator": "nullptr", "prefix_extractor_name": "nullptr", "property_collectors": "[]", "compression": "Snappy", "compression_options": "window_bits=-14; level=32767; strategy=0; max_dict_bytes=0; zstd_max_train_bytes=0; enabled=0; max_dict_buffer_bytes=0; ", "creation_time": 1626156832, "oldest_key_time": 1626156832, "file_creation_time": 1626156904, "slow_compression_estimated_data_size": 0, "fast_compression_estimated_data_size": 0, "db_id": "da0da3e1-6330-4ded-a8f3-500e4938af5e", "db_session_id": "07CPONV3V6VBSGYHQHT6"}, "oldest_blob_file_number": 85}
+2021/07/13-15:15:05.018606 7f213fde8700 [/flush_job.cc:449] [default] [JOB 27] Level-0 flush table #84: 1964178 bytes OK
+2021/07/13-15:15:05.023231 7f213fde8700 [WARN] [/column_family.cc:960] [default] Stalling writes because we have 26 level-0 files rate 576458
+2021/07/13-15:15:05.023256 7f213fde8700 (Original Log Time 2021/07/13-15:15:05.020904) [/memtable_list.cc:457] [default] Level-0 commit table #84 (+1 blob files) started
+2021/07/13-15:15:05.023258 7f213fde8700 (Original Log Time 2021/07/13-15:15:05.023217) [/memtable_list.cc:639] [default] Level-0 commit table #84 (+1 blob files): memtable #1 done
+2021/07/13-15:15:05.023259 7f213fde8700 (Original Log Time 2021/07/13-15:15:05.023228) EVENT_LOG_v1 {"time_micros": 1626156905023224, "job": 27, "event": "flush_finished", "output_compression": "Snappy", "lsm_state": [26, 0, 0, 0, 0, 0, 0], "blob_file_head": 10, "blob_file_tail": 85, "immutable_memtables": 0}
+2021/07/13-15:15:05.023260 7f213fde8700 (Original Log Time 2021/07/13-15:15:05.023245) [/db_impl/db_impl_compaction_flush.cc:241] [default] Level summary: files[26 0 0 0 0 0 0] max score 0.19
+2021/07/13-15:15:05.023261 7f213fde8700 (Original Log Time 2021/07/13-15:15:05.023246) [/db_impl/db_impl_compaction_flush.cc:249] [default] Blob file summary: head=10, tail=85
+2021/07/13-15:15:05.023267 7f213fde8700 [/db_impl/db_impl_files.cc:422] [JOB 27] Try to delete WAL files size 64801280, prev total WAL file size 64998208, number of live WAL files 2.
+2021/07/13-15:15:05.028218 7f213fde8700 [le/delete_scheduler.cc:77] Deleted file ../mnt/000080.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2021/07/13-15:15:05.028222 7f213fde8700 [DEBUG] [/db_impl/db_impl_files.cc:337] [JOB 27] Delete ../mnt/000080.log type=0 #80 -- OK
+2021/07/13-15:16:57.017375 7f212e7fc700 [/db_impl/db_impl_write.cc:1810] [default] New memtable created with log file: #86. Immutable memtables: 0.
+2021/07/13-15:16:57.017432 7f212e7fc700 [WARN] [/column_family.cc:960] [default] Stalling writes because we have 26 level-0 files rate 461166
+2021/07/13-15:16:57.017585 7f213fde8700 (Original Log Time 2021/07/13-15:16:57.017542) [/db_impl/db_impl_compaction_flush.cc:2568] Calling FlushMemTableToOutputFile with column family [default], flush slots available 1, compaction slots available 1, flush slots scheduled 1, compaction slots scheduled 0
+2021/07/13-15:16:57.017596 7f213fde8700 [/flush_job.cc:341] [default] [JOB 28] Flushing memtable with next log file: 86
+2021/07/13-15:16:57.017633 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626157017017620, "job": 28, "event": "flush_started", "num_memtables": 1, "num_entries": 119110, "num_deletes": 0, "total_data_size": 64200290, "memory_usage": 66850104, "flush_reason": "Write Buffer Full"}
+2021/07/13-15:16:57.017641 7f213fde8700 [/flush_job.cc:370] [default] [JOB 28] Level-0 flush table #87: started
+2021/07/13-15:16:57.279072 7f213fde8700 [/blob/blob_file_builder.cc:308] [default] [JOB 28] Generated blob file #88: 118975 total blobs, 66626000 total bytes
+2021/07/13-15:16:57.279377 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626157017279361, "cf_name": "default", "job": 28, "event": "table_file_creation", "file_number": 87, "file_size": 1964226, "file_checksum": "", "file_checksum_func_name": "Unknown", "table_properties": {"data_size": 1951762, "index_size": 16245, "index_partitions": 0, "top_level_index_size": 0, "index_key_is_user_key": 1, "index_value_is_delta_encoded": 1, "filter_size": 0, "raw_key_size": 2855400, "raw_average_key_size": 24, "raw_value_size": 1066999, "raw_average_value_size": 8, "num_data_blocks": 889, "num_entries": 118975, "num_filter_entries": 0, "num_deletions": 0, "num_merge_operands": 0, "num_range_deletions": 0, "format_version": 0, "fixed_key_len": 0, "filter_policy": "", "column_family_name": "default", "column_family_id": 0, "comparator": "leveldb.BytewiseComparator", "merge_operator": "nullptr", "prefix_extractor_name": "nullptr", "property_collectors": "[]", "compression": "Snappy", "compression_options": "window_bits=-14; level=32767; strategy=0; max_dict_bytes=0; zstd_max_train_bytes=0; enabled=0; max_dict_buffer_bytes=0; ", "creation_time": 1626156904, "oldest_key_time": 1626156904, "file_creation_time": 1626157017, "slow_compression_estimated_data_size": 0, "fast_compression_estimated_data_size": 0, "db_id": "da0da3e1-6330-4ded-a8f3-500e4938af5e", "db_session_id": "07CPONV3V6VBSGYHQHT6"}, "oldest_blob_file_number": 88}
+2021/07/13-15:16:57.279391 7f213fde8700 [/flush_job.cc:449] [default] [JOB 28] Level-0 flush table #87: 1964226 bytes OK
+2021/07/13-15:16:57.284236 7f213fde8700 [WARN] [/column_family.cc:960] [default] Stalling writes because we have 27 level-0 files rate 368932
+2021/07/13-15:16:57.284262 7f213fde8700 (Original Log Time 2021/07/13-15:16:57.281855) [/memtable_list.cc:457] [default] Level-0 commit table #87 (+1 blob files) started
+2021/07/13-15:16:57.284263 7f213fde8700 (Original Log Time 2021/07/13-15:16:57.284223) [/memtable_list.cc:639] [default] Level-0 commit table #87 (+1 blob files): memtable #1 done
+2021/07/13-15:16:57.284265 7f213fde8700 (Original Log Time 2021/07/13-15:16:57.284233) EVENT_LOG_v1 {"time_micros": 1626157017284229, "job": 28, "event": "flush_finished", "output_compression": "Snappy", "lsm_state": [27, 0, 0, 0, 0, 0, 0], "blob_file_head": 10, "blob_file_tail": 88, "immutable_memtables": 0}
+2021/07/13-15:16:57.284266 7f213fde8700 (Original Log Time 2021/07/13-15:16:57.284251) [/db_impl/db_impl_compaction_flush.cc:241] [default] Level summary: files[27 0 0 0 0 0 0] max score 0.20
+2021/07/13-15:16:57.284267 7f213fde8700 (Original Log Time 2021/07/13-15:16:57.284251) [/db_impl/db_impl_compaction_flush.cc:249] [default] Blob file summary: head=10, tail=88
+2021/07/13-15:16:57.284273 7f213fde8700 [/db_impl/db_impl_files.cc:422] [JOB 28] Try to delete WAL files size 64795840, prev total WAL file size 64918784, number of live WAL files 2.
+2021/07/13-15:16:57.289311 7f213fde8700 [le/delete_scheduler.cc:77] Deleted file ../mnt/000083.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2021/07/13-15:16:57.289315 7f213fde8700 [DEBUG] [/db_impl/db_impl_files.cc:337] [JOB 28] Delete ../mnt/000083.log type=0 #83 -- OK
+2021/07/13-15:19:52.450217 7f212e7fc700 [/db_impl/db_impl_write.cc:1810] [default] New memtable created with log file: #89. Immutable memtables: 0.
+2021/07/13-15:19:52.450250 7f212e7fc700 [WARN] [/column_family.cc:960] [default] Stalling writes because we have 27 level-0 files rate 295145
+2021/07/13-15:19:52.450420 7f213fde8700 (Original Log Time 2021/07/13-15:19:52.450377) [/db_impl/db_impl_compaction_flush.cc:2568] Calling FlushMemTableToOutputFile with column family [default], flush slots available 1, compaction slots available 1, flush slots scheduled 1, compaction slots scheduled 0
+2021/07/13-15:19:52.450430 7f213fde8700 [/flush_job.cc:341] [default] [JOB 29] Flushing memtable with next log file: 89
+2021/07/13-15:19:52.450466 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626157192450454, "job": 29, "event": "flush_started", "num_memtables": 1, "num_entries": 119115, "num_deletes": 0, "total_data_size": 64202985, "memory_usage": 66850232, "flush_reason": "Write Buffer Full"}
+2021/07/13-15:19:52.450474 7f213fde8700 [/flush_job.cc:370] [default] [JOB 29] Level-0 flush table #90: started
+2021/07/13-15:19:52.713180 7f213fde8700 [/blob/blob_file_builder.cc:308] [default] [JOB 29] Generated blob file #91: 118984 total blobs, 66631040 total bytes
+2021/07/13-15:19:52.713486 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626157192713469, "cf_name": "default", "job": 29, "event": "table_file_creation", "file_number": 90, "file_size": 1964465, "file_checksum": "", "file_checksum_func_name": "Unknown", "table_properties": {"data_size": 1952056, "index_size": 16225, "index_partitions": 0, "top_level_index_size": 0, "index_key_is_user_key": 1, "index_value_is_delta_encoded": 1, "filter_size": 0, "raw_key_size": 2855616, "raw_average_key_size": 24, "raw_value_size": 1067080, "raw_average_value_size": 8, "num_data_blocks": 889, "num_entries": 118984, "num_filter_entries": 0, "num_deletions": 0, "num_merge_operands": 0, "num_range_deletions": 0, "format_version": 0, "fixed_key_len": 0, "filter_policy": "", "column_family_name": "default", "column_family_id": 0, "comparator": "leveldb.BytewiseComparator", "merge_operator": "nullptr", "prefix_extractor_name": "nullptr", "property_collectors": "[]", "compression": "Snappy", "compression_options": "window_bits=-14; level=32767; strategy=0; max_dict_bytes=0; zstd_max_train_bytes=0; enabled=0; max_dict_buffer_bytes=0; ", "creation_time": 1626157017, "oldest_key_time": 1626157017, "file_creation_time": 1626157192, "slow_compression_estimated_data_size": 0, "fast_compression_estimated_data_size": 0, "db_id": "da0da3e1-6330-4ded-a8f3-500e4938af5e", "db_session_id": "07CPONV3V6VBSGYHQHT6"}, "oldest_blob_file_number": 91}
+2021/07/13-15:19:52.713500 7f213fde8700 [/flush_job.cc:449] [default] [JOB 29] Level-0 flush table #90: 1964465 bytes OK
+2021/07/13-15:19:52.718079 7f213fde8700 [WARN] [/column_family.cc:960] [default] Stalling writes because we have 28 level-0 files rate 236116
+2021/07/13-15:19:52.718104 7f213fde8700 (Original Log Time 2021/07/13-15:19:52.715673) [/memtable_list.cc:457] [default] Level-0 commit table #90 (+1 blob files) started
+2021/07/13-15:19:52.718105 7f213fde8700 (Original Log Time 2021/07/13-15:19:52.718065) [/memtable_list.cc:639] [default] Level-0 commit table #90 (+1 blob files): memtable #1 done
+2021/07/13-15:19:52.718107 7f213fde8700 (Original Log Time 2021/07/13-15:19:52.718076) EVENT_LOG_v1 {"time_micros": 1626157192718072, "job": 29, "event": "flush_finished", "output_compression": "Snappy", "lsm_state": [28, 0, 0, 0, 0, 0, 0], "blob_file_head": 10, "blob_file_tail": 91, "immutable_memtables": 0}
+2021/07/13-15:19:52.718108 7f213fde8700 (Original Log Time 2021/07/13-15:19:52.718093) [/db_impl/db_impl_compaction_flush.cc:241] [default] Level summary: files[28 0 0 0 0 0 0] max score 0.20
+2021/07/13-15:19:52.718109 7f213fde8700 (Original Log Time 2021/07/13-15:19:52.718093) [/db_impl/db_impl_compaction_flush.cc:249] [default] Blob file summary: head=10, tail=91
+2021/07/13-15:19:52.718114 7f213fde8700 [/db_impl/db_impl_files.cc:422] [JOB 29] Try to delete WAL files size 64798560, prev total WAL file size 64877984, number of live WAL files 2.
+2021/07/13-15:19:52.722920 7f213fde8700 [le/delete_scheduler.cc:77] Deleted file ../mnt/000086.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2021/07/13-15:19:52.722924 7f213fde8700 [DEBUG] [/db_impl/db_impl_files.cc:337] [JOB 29] Delete ../mnt/000086.log type=0 #86 -- OK
+2021/07/13-15:21:58.314027 7f212dffb700 [/db_impl/db_impl.cc:945] ------- DUMPING STATS -------
+2021/07/13-15:21:58.314141 7f212dffb700 [/db_impl/db_impl.cc:946] 
+** DB Stats **
+Uptime(secs): 603.0 total, 600.0 interval
+Cumulative writes: 3389K writes, 3389K keys, 3389K commit groups, 1.0 writes per commit group, ingest: 1.72 GB, 2.92 MB/s
+Cumulative WAL: 3389K writes, 0 syncs, 3389921.00 writes per sync, written: 1.72 GB, 2.92 MB/s
+Cumulative stall: 00:09:16.047 H:M:S, 92.2 percent
+Interval writes: 2534K writes, 2534K keys, 2534K commit groups, 1.0 writes per commit group, ingest: 1315.13 MB, 2.19 MB/s
+Interval WAL: 2534K writes, 0 syncs, 2534946.00 writes per sync, written: 1.28 GB, 2.19 MB/s
+Interval stall: 00:09:16.047 H:M:S, 92.7 percent
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  L0     28/0   52.44 MB   0.2      0.0     0.0      0.0       0.1      0.1       0.0   1.0      0.0    260.8      7.02              3.10        28    0.251       0      0       0.0       1.7
+ Sum     28/0   52.44 MB   0.0      0.0     0.0      0.0       0.1      0.1       0.0   1.0      0.0    260.8      7.02              3.10        28    0.251       0      0       0.0       1.7
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   1.0      0.0    258.3      5.57              2.48        22    0.253       0      0       0.0       1.4
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop Rblob(GB) Wblob(GB)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+High      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.1      0.1       0.0   0.0      0.0    260.8      7.02              3.10        28    0.251       0      0       0.0       1.7
+
+Blob file count: 28, total size: 1.7 GB
+
+Uptime(secs): 603.0 total, 600.0 interval
+Flush(GB): cumulative 1.789, interval 1.405
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 1.79 GB write, 3.04 MB/s write, 0.00 GB read, 0.00 MB/s read, 7.0 seconds
+Interval compaction: 1.41 GB write, 2.40 MB/s write, 0.00 GB read, 0.00 MB/s read, 5.6 seconds
+Stalls(count): 17 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 17 total count
+Block cache LRUCache@0x55944faaed30 capacity: 8.00 MB collections: 2 last_copies: 0 last_secs: 0.000175 secs_since: 0
+Block cache entry stats(count,size,portion): Misc(1,0.00 KB,0%)
+
+** File Read Latency Histogram By Level [default] **
+2021/07/13-15:24:26.489288 7f212e7fc700 [/db_impl/db_impl_write.cc:1810] [default] New memtable created with log file: #92. Immutable memtables: 0.
+2021/07/13-15:24:26.489342 7f212e7fc700 [WARN] [/column_family.cc:960] [default] Stalling writes because we have 28 level-0 files rate 188892
+2021/07/13-15:24:26.489485 7f213fde8700 (Original Log Time 2021/07/13-15:24:26.489445) [/db_impl/db_impl_compaction_flush.cc:2568] Calling FlushMemTableToOutputFile with column family [default], flush slots available 1, compaction slots available 1, flush slots scheduled 1, compaction slots scheduled 0
+2021/07/13-15:24:26.489496 7f213fde8700 [/flush_job.cc:341] [default] [JOB 30] Flushing memtable with next log file: 92
+2021/07/13-15:24:26.489533 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626157466489520, "job": 30, "event": "flush_started", "num_memtables": 1, "num_entries": 119110, "num_deletes": 0, "total_data_size": 64200290, "memory_usage": 66850072, "flush_reason": "Write Buffer Full"}
+2021/07/13-15:24:26.489540 7f213fde8700 [/flush_job.cc:370] [default] [JOB 30] Level-0 flush table #93: started
+2021/07/13-15:24:26.763233 7f213fde8700 [/blob/blob_file_builder.cc:308] [default] [JOB 30] Generated blob file #94: 118984 total blobs, 66631040 total bytes
+2021/07/13-15:24:26.763561 7f213fde8700 EVENT_LOG_v1 {"time_micros": 1626157466763542, "cf_name": "default", "job": 30, "event": "table_file_creation", "file_number": 93, "file_size": 1964630, "file_checksum": "", "file_checksum_func_name": "Unknown", "table_properties": {"data_size": 1952242, "index_size": 16207, "index_partitions": 0, "top_level_index_size": 0, "index_key_is_user_key": 1, "index_value_is_delta_encoded": 1, "filter_size": 0, "raw_key_size": 2855616, "raw_average_key_size": 24, "raw_value_size": 1067080, "raw_average_value_size": 8, "num_data_blocks": 889, "num_entries": 118984, "num_filter_entries": 0, "num_deletions": 0, "num_merge_operands": 0, "num_range_deletions": 0, "format_version": 0, "fixed_key_len": 0, "filter_policy": "", "column_family_name": "default", "column_family_id": 0, "comparator": "leveldb.BytewiseComparator", "merge_operator": "nullptr", "prefix_extractor_name": "nullptr", "property_collectors": "[]", "compression": "Snappy", "compression_options": "window_bits=-14; level=32767; strategy=0; max_dict_bytes=0; zstd_max_train_bytes=0; enabled=0; max_dict_buffer_bytes=0; ", "creation_time": 1626157192, "oldest_key_time": 1626157192, "file_creation_time": 1626157466, "slow_compression_estimated_data_size": 0, "fast_compression_estimated_data_size": 0, "db_id": "da0da3e1-6330-4ded-a8f3-500e4938af5e", "db_session_id": "07CPONV3V6VBSGYHQHT6"}, "oldest_blob_file_number": 94}
+2021/07/13-15:24:26.763576 7f213fde8700 [/flush_job.cc:449] [default] [JOB 30] Level-0 flush table #93: 1964630 bytes OK
+2021/07/13-15:24:26.768508 7f213fde8700 [WARN] [/column_family.cc:960] [default] Stalling writes because we have 29 level-0 files rate 151113
+2021/07/13-15:24:26.768535 7f213fde8700 (Original Log Time 2021/07/13-15:24:26.765984) [/memtable_list.cc:457] [default] Level-0 commit table #93 (+1 blob files) started
+2021/07/13-15:24:26.768537 7f213fde8700 (Original Log Time 2021/07/13-15:24:26.768493) [/memtable_list.cc:639] [default] Level-0 commit table #93 (+1 blob files): memtable #1 done
+2021/07/13-15:24:26.768538 7f213fde8700 (Original Log Time 2021/07/13-15:24:26.768505) EVENT_LOG_v1 {"time_micros": 1626157466768500, "job": 30, "event": "flush_finished", "output_compression": "Snappy", "lsm_state": [29, 0, 0, 0, 0, 0, 0], "blob_file_head": 10, "blob_file_tail": 94, "immutable_memtables": 0}
+2021/07/13-15:24:26.768540 7f213fde8700 (Original Log Time 2021/07/13-15:24:26.768524) [/db_impl/db_impl_compaction_flush.cc:241] [default] Level summary: files[29 0 0 0 0 0 0] max score 0.21
+2021/07/13-15:24:26.768541 7f213fde8700 (Original Log Time 2021/07/13-15:24:26.768524) [/db_impl/db_impl_compaction_flush.cc:249] [default] Blob file summary: head=10, tail=94
+2021/07/13-15:24:26.768548 7f213fde8700 [/db_impl/db_impl_files.cc:422] [JOB 30] Try to delete WAL files size 64795840, prev total WAL file size 64848608, number of live WAL files 2.
+2021/07/13-15:24:26.773945 7f213fde8700 [le/delete_scheduler.cc:77] Deleted file ../mnt/000089.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2021/07/13-15:24:26.773949 7f213fde8700 [DEBUG] [/db_impl/db_impl_files.cc:337] [JOB 30] Delete ../mnt/000089.log type=0 #89 -- OK
