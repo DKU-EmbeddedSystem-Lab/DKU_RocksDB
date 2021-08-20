@@ -35,6 +35,7 @@ uint64_t TotalCompensatedFileSize(const std::vector<FileMetaData*>& files) {
 }
 }  // anonymous namespace
 
+// selects the files for compacting into a single big file in L0 (L0->L0 compaction) - YJ243
 bool FindIntraL0Compaction(const std::vector<FileMetaData*>& level_files,
                            size_t min_files_to_compact,
                            uint64_t max_compact_bytes_per_del_file,
@@ -95,7 +96,7 @@ bool FindIntraL0Compaction(const std::vector<FileMetaData*>& level_files,
     compact_bytes_per_del_file = new_compact_bytes_per_del_file;
   }
 
-  // L0 : ã…ã…ã…ã…ã…ã…
+  // L0 : ?…?…?…?…?…?…
   //        ^start  ^limit
   //then push level_files[start+1:limit] to 'comp_inputs' ,  inhoinno
   if ((limit - start) >= min_files_to_compact &&
