@@ -83,19 +83,25 @@ bool FindIntraL0Compaction(const std::vector<FileMetaData*>& level_files,
     
     // what does 'compensated' mean in here ? , inhoinno
     compensated_compact_bytes += level_files[limit]->compensated_file_size;
+    
+    //calculate compact bytes in average, inhoinno
     new_compact_bytes_per_del_file = compact_bytes / (limit - start);
+
+    //set 'limit' value and go to compaction
+    //if this file is being compacted,
+    //or average bytes of compaction is larger than previous average
+    //or compensated_compact_bytes is larger than maximum compaction bytes 
     if (level_files[limit]->being_compacted ||
         new_compact_bytes_per_del_file > compact_bytes_per_del_file ||
         compensated_compact_bytes > max_compaction_bytes) {
-
-
+        //then break the loop(value 'limit' set, which means we decide victim files to be compacted). inhoinno
       break;
 
     }
     compact_bytes_per_del_file = new_compact_bytes_per_del_file;
   }
 
-  // L0 : ㅁㅁㅁㅁㅁㅁ
+  // L0 : ㅁㅁㅁㅁㅁㅁㅁ
   //        ^start  ^limit
   //then push level_files[start+1:limit] to 'comp_inputs' ,  inhoinno
   if ((limit - start) >= min_files_to_compact &&
@@ -179,6 +185,9 @@ void CompactionPicker::ReleaseCompactionFiles(Compaction* c, Status status) {
   }
 }
 
+
+// compaction_picker_level.cc:462 calls GetRange()
+// LevelCompactionBuilder::PickFileToCompact() call this. inhoinno
 void CompactionPicker::GetRange(const CompactionInputFiles& inputs,
                                 InternalKey* smallest,
                                 InternalKey* largest) const {
@@ -188,6 +197,9 @@ void CompactionPicker::GetRange(const CompactionInputFiles& inputs,
   largest->Clear();
 
   if (level == 0) {
+      //if compaction level is 0
+      //-then we need to loop whole input files 
+      // iterator takes O(n) (=O(inputs.len)) inhoinno. 
     for (size_t i = 0; i < inputs.size(); i++) {
       FileMetaData* f = inputs[i];
       if (i == 0) {
@@ -203,6 +215,9 @@ void CompactionPicker::GetRange(const CompactionInputFiles& inputs,
       }
     }
   } else {
+      //if compaction level is not 0 
+      //-then we can just point directly to range
+      //input[0]->smallest, input[-1]->largest , inhoinno
     *smallest = inputs[0]->smallest;
     *largest = inputs[inputs.size() - 1]->largest;
   }
