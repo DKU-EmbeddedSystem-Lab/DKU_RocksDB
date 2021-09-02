@@ -313,6 +313,7 @@ Compaction* LevelCompactionBuilder::PickCompaction() {
   // Pick files in the output level and expand more files in the start level
   // if needed.
   if (!SetupOtherInputsIfNeeded()) {
+      //In short, we dont do compacting when key-range is overlap with another running compaction. inhoinno 
     return nullptr;
   }
 
