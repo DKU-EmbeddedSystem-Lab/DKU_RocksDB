@@ -316,6 +316,8 @@ bool CompactionPicker::ExpandInputsToCleanCut(const std::string& /*cf_name*/,
   return true;
 }
 
+// RangeOverlapWithCompaction : search and return bool when input Key-slice (smallest,largest) is overlap with undergoing compaction, c  inhoinno
+
 bool CompactionPicker::RangeOverlapWithCompaction(
     const Slice& smallest_user_key, const Slice& largest_user_key,
     int level) const {
@@ -332,6 +334,8 @@ bool CompactionPicker::RangeOverlapWithCompaction(
   return false;
 }
 // this is a Wrapper of RangeOverlapWithCompaction. inhoinno
+// FilesRangeOverlapWithCompaction search key-range of inputfiles input, using GetRange(input, &smallest, &largest)
+// after that, return boolean value when CompactionInputFiles' key-range is overlap with undergoing compaction, using RangeOverlapWithCompaction(smallest, largest, level). inhoinno
 bool CompactionPicker::FilesRangeOverlapWithCompaction(
     const std::vector<CompactionInputFiles>& inputs, int level) const {
   bool is_empty = true;
