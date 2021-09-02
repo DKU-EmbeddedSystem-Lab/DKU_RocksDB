@@ -167,10 +167,13 @@ void FlushJob::RecordFlushIOStats() {
       ThreadStatus::FLUSH_BYTES_WRITTEN, IOSTATS(bytes_written));
   IOSTATS_RESET(bytes_written);
 }
+
+// 
 void FlushJob::PickMemTable() {
+  // before pick memtable to flush, it is required that the lock(db_mutex) is held - YJ243
   db_mutex_->AssertHeld();
-  assert(!pick_memtable_called);
-  pick_memtable_called = true;
+  assert(!pick_memtable_called); // if [pick_memtable_called == true (PickMemTable() is already called)], error reporting! - YJ243
+  pick_memtable_called = true; 
   // Save the contents of the earliest memtable as a new Table
   cfd_->imm()->PickMemtablesToFlush(max_memtable_id_, &mems_);
   if (mems_.empty()) {
