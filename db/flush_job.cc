@@ -49,6 +49,7 @@
 
 namespace ROCKSDB_NAMESPACE {
 
+// Flushjob::WriteLevel0Table() calls GetFlushReasonString to log about flush(memtable->L0 sst file) reason - YJ243
 const char* GetFlushReasonString (FlushReason flush_reason) {
   switch (flush_reason) {
     case FlushReason::kOthers:
