@@ -153,12 +153,12 @@ void FlushJob::ReportStartedFlush() {
 
 void FlushJob::ReportFlushInputSize(const autovector<MemTable*>& mems) {
   uint64_t input_size = 0;
-  for (auto* mem : mems) {
+  for (auto* mem : mems) { // while iterating memtable list, add up the size(memory usage) of memtable - YJ243
     input_size += mem->ApproximateMemoryUsage();
   }
   ThreadStatusUtil::IncreaseThreadOperationProperty(
       ThreadStatus::FLUSH_BYTES_MEMTABLES,
-      input_size);
+      input_size); //report the input_size to thread local cache - YJ243
 }
 
 void FlushJob::RecordFlushIOStats() {
@@ -170,17 +170,19 @@ void FlushJob::RecordFlushIOStats() {
 
 // 
 void FlushJob::PickMemTable() {
-  // before pick memtable to flush, it is required that the lock(db_mutex) is held - YJ243
-  db_mutex_->AssertHeld();
-  assert(!pick_memtable_called); // if [pick_memtable_called == true (PickMemTable() is already called)], error reporting! - YJ243
+  // before pick memtable to flush, it is required that the lock(db_mutex_) is held - YJ243
+  db_mutex_->AssertHeld(); 
+  assert(!pick_memtable_called); // if pick_memtable_called == true (PickMemTable() is already called), error reporting! - YJ243
   pick_memtable_called = true; 
   // Save the contents of the earliest memtable as a new Table
-  cfd_->imm()->PickMemtablesToFlush(max_memtable_id_, &mems_);
-  if (mems_.empty()) {
+  // select the immutable memtable, compare the largest memtable id to flush and memtable id (should be smaller or equal to max_memtable_id) - YJ243
+  cfd_->imm()->PickMemtablesToFlush(max_memtable_id_, &mems_); 
+
+  if (mems_.empty()) { // if the selected memtable's size == 0 then return - YJ243
     return;
   }
 
-  ReportFlushInputSize(mems_);
+  ReportFlushInputSize(mems_); // report the memtable's input_size to thread local cache - YJ243
 
   // entries mems are (implicitly) sorted in ascending order by their created
   // time. We will use the first memtable's `edit` to keep the meta info for
