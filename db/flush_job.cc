@@ -153,7 +153,7 @@ void FlushJob::ReportStartedFlush() {
 
 void FlushJob::ReportFlushInputSize(const autovector<MemTable*>& mems) {
   uint64_t input_size = 0;
-  for (auto* mem : mems) { // while iterating memtable list, add up the size(memory usage) of memtable - YJ243
+  for (auto* mem : mems) { // while iterating memtable list entry, add up the size(memory usage) of memtable - YJ243
     input_size += mem->ApproximateMemoryUsage();
   }
   ThreadStatusUtil::IncreaseThreadOperationProperty(
@@ -162,10 +162,11 @@ void FlushJob::ReportFlushInputSize(const autovector<MemTable*>& mems) {
 }
 
 void FlushJob::RecordFlushIOStats() {
-  RecordTick(stats_, FLUSH_WRITE_BYTES, IOSTATS(bytes_written));
+  // setting io stats: number of bytes that has been written for flush - YJ243
+  RecordTick(stats_, FLUSH_WRITE_BYTES, IOSTATS(bytes_written)); 
   ThreadStatusUtil::IncreaseThreadOperationProperty(
       ThreadStatus::FLUSH_BYTES_WRITTEN, IOSTATS(bytes_written));
-  IOSTATS_RESET(bytes_written);
+  IOSTATS_RESET(bytes_written); 
 }
 
 // 
@@ -188,7 +189,7 @@ void FlushJob::PickMemTable() {
   // time. We will use the first memtable's `edit` to keep the meta info for
   // this flush.
   MemTable* m = mems_[0];
-  edit_ = m->GetEdits();
+  edit_ = m->GetEdits(); // returns the edits area(modified DB state) for flushing the memtable - YJ243
   edit_->SetPrevLogNumber(0);
   // SetLogNumber(log_num) indicates logs with number smaller than log_num
   // will no longer be picked up for recovery.
@@ -196,7 +197,7 @@ void FlushJob::PickMemTable() {
   edit_->SetColumnFamily(cfd_->GetID());
 
   // path 0 for level 0 file.
-  meta_.fd = FileDescriptor(versions_->NewFileNumber(), 0, 0);
+  meta_.fd = FileDescriptor(versions_->NewFileNumber(), 0, 0); 
 
   base_ = cfd_->current();
   base_->Ref();  // it is likely that we do not need this reference
@@ -204,17 +205,22 @@ void FlushJob::PickMemTable() {
 
 Status FlushJob::Run(LogsWithPrepTracker* prep_tracker,
                      FileMetaData* file_meta) {
-  TEST_SYNC_POINT("FlushJob::Start");
+  TEST_SYNC_POINT("FlushJob::Start"); // specify sync point of Flush job - YJ243
   db_mutex_->AssertHeld();
-  assert(pick_memtable_called);
+  assert(pick_memtable_called); // if PickMemTable() is called, proceed with the following steps - YJ243
   AutoThreadOperationStageUpdater stage_run(
-      ThreadStatus::STAGE_FLUSH_RUN);
+      ThreadStatus::STAGE_FLUSH_RUN);  //update thread state: flush run - YJ243
+  
+  // 1) flushjob's condition check: if memtable's are empty? - YJ243
   if (mems_.empty()) {
+    // if memtable's size() == 0 then add empty information to log buffer with column family data name - YJ243 
     ROCKS_LOG_BUFFER(log_buffer_, "[%s] Nothing in memtable to flush",
-                     cfd_->GetName().c_str());
-    return Status::OK();
+                     cfd_->GetName().c_str()); 
+    return Status::OK(); // return thread's success status - YJ243 
   }
 
+  // 2) if memtable is not empty, proceed with the following steps - YJ243
+  // 2-1) get the i/o information - YJ243
   // I/O measurement variables
   PerfLevel prev_perf_level = PerfLevel::kEnableTime;
   uint64_t prev_write_nanos = 0;
@@ -233,13 +239,18 @@ Status FlushJob::Run(LogsWithPrepTracker* prep_tracker,
     prev_cpu_write_nanos = IOSTATS(cpu_write_nanos);
     prev_cpu_read_nanos = IOSTATS(cpu_read_nanos);
   }
-
+  
+  // 2-2) write memtable(the buffered KV-pairs) to level0 to the storage device in the form of a SSTfile - YJ243 
   // This will release and re-acquire the mutex.
   Status s = WriteLevel0Table();
+  
 
+  // 3) The following is to check the status after WriteLevel0Table() - YJ243 
+  // if operation status indicates success and column family is dropped: - YJ243  
   if (s.ok() && cfd_->IsDropped()) {
     s = Status::ColumnFamilyDropped("Column family dropped during compaction");
   }
+
   if ((s.ok() || s.IsColumnFamilyDropped()) &&
       shutting_down_->load(std::memory_order_acquire)) {
     s = Status::ShutdownInProgress("Database shutdown");
@@ -306,10 +317,11 @@ Status FlushJob::Run(LogsWithPrepTracker* prep_tracker,
   return s;
 }
 
+// Need to undo atomic flush if something went wrong - YJ243
 void FlushJob::Cancel() {
-  db_mutex_->AssertHeld();
-  assert(base_ != nullptr);
-  base_->Unref();
+  db_mutex_->AssertHeld(); // before cancel the flush jobs, it is required that the lock(db_mutex_) is held - YJ243
+  assert(base_ != nullptr); // make sure cfd_->current() is not nullptr - YJ243;
+  base_->Unref(); // decrease reference count (if no reference left then delete the object - YJ243
 }
 
 Status FlushJob::WriteLevel0Table() {
